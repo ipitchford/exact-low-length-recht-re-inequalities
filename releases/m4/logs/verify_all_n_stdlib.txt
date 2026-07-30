@@ -1,0 +1,6 @@
+IDENTITIES: 152 rational-function equations verified exactly.
+BLOCK COUNTS: degree<=4 interpolation and independent n=10 replay passed.
+SEED TRANSVERSALS: 23 upper and 30 lower free coordinates reconstruct the exact affine certificates uniquely.
+POSITIVITY n>=5: block construction, 51 exact determinants, positive coefficients, and kernel passed.
+n=4: exact identities and all rational Sylvester tests passed.
+VERIFIED (stdlib): Recht--Re m=4 holds for every integer n>=4.

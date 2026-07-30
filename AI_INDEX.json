@@ -1,0 +1,100 @@
+{
+  "archival_record": {
+    "archive_file": "exact-low-length-recht-re-inequalities-v1.0.0-candidate.zip",
+    "archive_sha256_source": "outer release certificate",
+    "concept_doi": null,
+    "provider": "Zenodo",
+    "record_url": "https://zenodo.org/records/21709239",
+    "version_doi": "10.5281/zenodo.21709239"
+  },
+  "assurance": {
+    "exact_fresh_extraction_replay": true,
+    "external_human_peer_review": false,
+    "formal_proof_assistant_verification": false,
+    "independent_external_reproduction": false,
+    "internal_adversarial_review": true,
+    "python_optimization_fail_closed": true,
+    "semantic_reconstruction_checks": true
+  },
+  "claims": [
+    {
+      "evidence": [
+        "releases/m4/",
+        "scripts/check_semantic_bridge.py"
+      ],
+      "id": "C1",
+      "statement": "The two-sided four-factor inequality holds for every n >= 4."
+    },
+    {
+      "evidence": [
+        "releases/m5/"
+      ],
+      "id": "C2",
+      "statement": "The five-factor upper inequality holds for every n >= 5."
+    },
+    {
+      "evidence": [
+        "releases/m5/"
+      ],
+      "id": "C3",
+      "statement": "The five-factor lower inequality holds for every n >= 6."
+    },
+    {
+      "evidence": [
+        "releases/m5/counterexamples/verify_n5_lower_counterexample.py"
+      ],
+      "id": "C4",
+      "statement": "The five-factor lower inequality fails at n = 5."
+    },
+    {
+      "evidence": [
+        "releases/m6-balanced/",
+        "paper/exact_low_length_recht_re.tex"
+      ],
+      "id": "C5",
+      "statement": "The six-factor upper inequality holds whenever 7 divides n."
+    },
+    {
+      "evidence": [
+        "releases/m6-balanced/",
+        "paper/exact_low_length_recht_re.tex"
+      ],
+      "id": "C6",
+      "statement": "The six-factor lower inequality holds whenever 8 divides n."
+    },
+    {
+      "evidence": [
+        "releases/m6-balanced/",
+        "paper/exact_low_length_recht_re.tex"
+      ],
+      "id": "C7",
+      "statement": "The two-sided six-factor inequality holds whenever 56 divides n."
+    },
+    {
+      "evidence": [
+        "releases/m5/counterexamples/verify_n5_lower_counterexample.py",
+        "tests/extended_negative_controls.py"
+      ],
+      "id": "C8",
+      "statement": "The five-matrix witness gives an exact one-epoch bias-mean-square reversal."
+    }
+  ],
+  "github_release": {
+    "repository": "ipitchford/exact-low-length-recht-re-inequalities",
+    "tag": "v1.0.0-candidate",
+    "url": "https://github.com/ipitchford/exact-low-length-recht-re-inequalities/releases/tag/v1.0.0-candidate"
+  },
+  "non_inference": [
+    "Hash equality establishes byte identity, not mathematical correctness.",
+    "Certificate replay does not by itself validate the mathematical encoding.",
+    "Mutation rejection does not prove verifier correctness.",
+    "The six-factor claim does not cover nonmultiples of seven or eight.",
+    "The optimization claim is instance-specific and one-epoch.",
+    "Internal audit is not independent external reproduction.",
+    "A DOI or public release is not peer review."
+  ],
+  "publication_status": "anonymous unrefereed candidate computer-assisted manuscript",
+  "repository": "ipitchford/exact-low-length-recht-re-inequalities",
+  "schema": "recht-re.ai-evidence-index/v1",
+  "version": "1.0.0-candidate"
+}

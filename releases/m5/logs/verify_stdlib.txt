@@ -1,0 +1,7 @@
+IDENTITIES: 152 rational-function equations verified exactly.
+BLOCK COUNTS: degree<=4 interpolation and independent n=11 replay passed.
+SEED TRANSVERSALS: 23 upper and 30 lower free coordinates reconstruct the exact affine certificates uniquely.
+POSITIVITY n>=6: block construction, 51 exact determinants, positive coefficients, and kernel passed.
+n=5 UPPER ENDPOINT: exact identity, kernel, and rational Sylvester tests passed.
+SEED: parametric family specializes exactly to both n=6 certificates.
+VERIFIED (stdlib): Recht--Re m=5 upper bound holds for n>=5 and both bounds hold for n>=6.

@@ -1,0 +1,45 @@
+# SPDX-License-Identifier: CC0-1.0
+cff-version: 1.2.0
+title: >-
+  Exact Low-Length Recht–Ré Inequalities: paper and exact replication package
+message: >-
+  Cite this work as an anonymous unrefereed candidate computer-assisted
+  mathematical manuscript and preserve its version and assurance status.
+type: software
+version: 1.0.0-candidate
+date-released: "2026-07-30"
+authors:
+  - name: "Anonymous"
+license: CC0-1.0
+doi: "10.5281/zenodo.21709239"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21709239"
+    description: DOI for the exact 1.0.0-candidate archival deposit
+repository-code: >-
+  https://github.com/ipitchford/exact-low-length-recht-re-inequalities
+url: >-
+  https://github.com/ipitchford/exact-low-length-recht-re-inequalities/releases/tag/v1.0.0-candidate
+abstract: >-
+  Anonymous unrefereed candidate package proving exact computer-assisted
+  Recht–Ré inequalities through five factors, balanced six-factor families,
+  and a one-epoch bias-mean-square reversal. The bundle includes exact
+  certificate replay, semantic reconstruction checks, and mutation controls;
+  it is not external peer review or formal verification.
+keywords:
+  - matrix inequalities
+  - noncommutative sums of squares
+  - exact certificates
+  - random reshuffling
+  - reproducible research
+preferred-citation:
+  type: unpublished
+  title: "Exact Low-Length Recht–Ré Inequalities"
+  authors:
+    - name: "Anonymous"
+  year: 2026
+  version: 1.0.0-candidate
+  status: preprint
+  doi: "10.5281/zenodo.21709239"
+  url: >-
+    https://github.com/ipitchford/exact-low-length-recht-re-inequalities/releases/tag/v1.0.0-candidate

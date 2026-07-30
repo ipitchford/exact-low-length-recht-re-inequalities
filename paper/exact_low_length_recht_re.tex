@@ -1,0 +1,1380 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array,longtable}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{url}
+\ifdefined\pdfinfoomitdate
+  \pdfinfoomitdate=1
+\fi
+\ifdefined\pdftrailerid
+  \pdftrailerid{}
+\fi
+\ifdefined\pdfsuppressptexinfo
+  \pdfsuppressptexinfo=15
+\fi
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!45!black,
+  citecolor=blue!45!black,
+  urlcolor=blue!45!black,
+  pdftitle={Exact Low-Length Recht-R\'e Inequalities},
+  pdfauthor={Anonymous},
+  pdfsubject={Anonymous unrefereed candidate computer-assisted manuscript}
+}
+\urlstyle{same}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.48em}
+\allowdisplaybreaks
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\E}{\mathcal E}
+\newcommand{\Lcal}{\mathcal L}
+\newcommand{\W}{\mathcal W}
+\newcommand{\fall}[2]{(#1)_{#2}}
+\newcommand{\up}{\mathrm{up}}
+\newcommand{\low}{\mathrm{low}}
+\newcommand{\one}{\mathbf 1}
+
+\title{\textbf{Exact Low-Length Recht--R\'e Inequalities}\\[0.35em]
+\large Complete status through five factors and six-factor balanced families}
+\author{Anonymous}
+\date{Public unrefereed candidate, 30 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Recht and R\'e proposed a noncommutative arithmetic--geometric mean inequality for averaged fixed-matrix products.  We determine its exact status through product length five and prove new six-factor infinite families.  For positive semidefinite Hermitian \(A_i\) with \(\sum_iA_i\preceq nI\), the ordered distinct-product sum satisfies
+\[
+ -\fall n4I\preceq\E_{4,n}(A)\preceq\fall n4I
+ \quad(n\ge4).
+\]
+For five factors, the upper bound holds for \(n\ge5\), while the lower bound holds exactly from \(n=6\); De Sa's rational \(n=5\) construction proves sharpness.
+
+The conceptual ingredient is a general balanced-seed continuation theorem: an equivariant finite-variable free-localizer identity transports to balanced multiples and then coefficientwise to a rational all-\(n\) identity; positivity remains separate.  For four and five factors, symmetry blocks and 102 exact minor polynomials prove uniform positivity.  For six factors, 2,312 exact coefficient identities and full-matrix characteristic-polynomial certificates prove the upper seed at \(n=7\) and lower seed at \(n=8\).  Balanced lifting yields the upper bound when \(7\mid n\), the lower when \(8\mid n\), and the two-sided norm inequality when \(56\mid n\); intervening cases remain open.
+
+A schema-independent checker validates the orbit and representation maps and rejects semantic mutations.  The same rational quadratic witness separates performance metrics: reshuffling has the larger norm of the expected iterate, \(19/512>1/32\), but a strictly smaller one-epoch second-moment operator, hence smaller expected squared error and average quadratic objective.
+\end{abstract}
+
+\paragraph{Keywords.}
+Noncommutative arithmetic--geometric mean inequality; matrix products;
+free sums of squares; exact certificates; random reshuffling.
+
+\paragraph{2020 Mathematics Subject Classification.}
+Primary 15A45, 47A63; Secondary 90C22, 68V05.
+
+\begin{center}
+\fbox{\begin{minipage}{0.92\textwidth}
+\textbf{Status and evidence boundary.}
+This is an exact executable candidate proof, not a peer-reviewed theorem.  For four and five factors, two verifier implementations use different arithmetic engines but share the certificate schema and proof architecture; their agreement is redundant exact checking, not independent reproduction.  The complementary six-factor identity and PSD programs also share an orbit encoder.  A structurally separate semantic checker reconstructs the four/five-factor orbit, coefficient, and representation maps from concrete words and group actions.  The historical numerical searches that produced the rational seeds are not reproduced.  Lai and Lim's SDP/Farkas computation is retained as context but is not load-bearing: De Sa's rational \(m=n=5\) counterexample is replayed exactly.
+\end{minipage}}
+\end{center}
+
+\section{Background and combined result}\label{sec:background}
+
+For integers \(m\le n\), write
+\[
+ \fall nm=n(n-1)\cdots(n-m+1),\qquad
+ \E_{m,n}(A)=
+ \sum_{\substack{i_1,\ldots,i_m\in[n]\\\mathrm{all\ distinct}}}
+ A_{i_1}\cdots A_{i_m}.
+\]
+Reversal permutes the ordered distinct tuples, so \(\E_{m,n}(A)\) is Hermitian.  Recht and R\'e proposed
+\begin{equation}\label{eq:rr-norm}
+ \left\|\left(\frac{\sum_iA_i}{n}\right)^m\right\|
+ \ge
+ \left\|\frac{\E_{m,n}(A)}{\fall nm}\right\|,
+\end{equation}
+motivated by the comparison of with- and without-replacement iterations in stochastic optimization~\cite{RechtRe2012}.
+
+Duchi isolated a related termwise-norm, or expectation-of-norms, formulation; Israel, Krahmer, and Ward proved that variant through products of length three~\cite{Duchi2012,IsraelKrahmerWard2016}.  It is distinct from the norm of the averaged product in \eqref{eq:rr-norm}.  Zhang proved \eqref{eq:rr-norm} for three factors when the number of matrices is a multiple of three; his multiple-lifting lemma supplies the balanced step generalized below~\cite{Zhang2018}.
+
+Lai and Lim converted the Loewner formulation into free sum-of-squares semidefinite programs, proved the cases \(m=2,3\), left the \(m=4\) family open after numerical checks at \(n=4,5\), and conjectured that the upper Loewner bound remains true for every \(m\le n\)~\cite{LaiLim2020}.  They also refuted the lower bound at \(m=n=5\).  Their Section~4 reports a numerical lower-SDP optimum
+\(\lambda_2^\ast=144.6488\) and approximate Farkas evidence, with positive dual objective about \(47.3\), against feasibility at
+\(\lambda_2=120=\fall55\).  The present package does not reproduce that external computation.
+
+De Sa independently supplied an explicit family of rational positive semidefinite matrices at \(m=n=5\)~\cite{DeSa2020}.  Section~\ref{sec:desa} gives the matrices and an exact evaluation of their symmetrized product.  This direct witness, rather than the unreplayed numerical SDP, is the load-bearing sharpness proof below.
+
+\paragraph{Adjacent, non-equivalent formulations.}
+The matrix AGM literature contains several nearby statements that must not be
+identified with \eqref{eq:rr-norm}.  Bhatia and Kittaneh survey classical
+matrix AGM inequalities for unitarily invariant norms~\cite{BhatiaKittaneh2008}.
+Albar, Junge, and Zhao prove dimension-free bounds for general operators and
+an order inequality under additional hypotheses~\cite{AlbarJungeZhao2017};
+their later symmetrized inequality averages palindromic products
+\(A_{j_1}^{*}\cdots A_{j_m}^{*}A_{j_m}\cdots A_{j_1}\), a second-moment
+object, and its optimistic constant-one form also fails
+~\cite{AlbarJungeZhao2018}.  Matrix rearrangement inequalities for fixed words
+form another adjacent line~\cite{AlaifariEtAl2020}.
+
+Yun, Sra, and Jadbabaie formulate conditioned, multi-epoch
+single-shuffle--reshuffling--gradient-descent operator comparisons
+~\cite{YunSraJadbabaie2021}.  Peng proves their reshuffling--gradient-descent
+inequality in a near-identity regime and disproves the single-shuffle ordering
+even arbitrarily close to the identity~\cite{Peng2026}.  Liu's finite-epoch
+rate comparison for smooth convex optimization instead uses trajectory-level
+convex analysis~\cite{Liu2026}.  These results concern different assumptions
+or performance metrics and are compatible with the unrestricted
+fixed-product classification proved here.
+
+The resulting low-length status is
+\[
+\begin{array}{c|l}
+\toprule
+m&\text{status of the two-sided norm inequality}\\
+\midrule
+2,3&\text{true for every }n\ge m\text{ (literature)}\\
+4&\text{true for every }n\ge4\text{ (Theorem~\ref{thm:main})}\\
+5&\text{exact lower failure at }n=5\text{; true for every }n\ge6\\
+6&\text{true when }56\mid n;\ 
+   \text{upper when }7\mid n,\ \text{lower when }8\mid n\\
+\bottomrule
+\end{array}
+\]
+
+\section{Normalization and main theorem}\label{sec:statement}
+
+\begin{lemma}[Normalization]\label{lem:normalization}
+For fixed \(m\le n\), inequality \eqref{eq:rr-norm} holds for every positive semidefinite Hermitian tuple if and only if
+\begin{equation}\label{eq:normalized}
+ -\fall nm I\preceq\E_{m,n}(A)\preceq\fall nm I
+\end{equation}
+whenever \(\sum_iA_i\preceq nI\).
+\end{lemma}
+
+\begin{proof}
+Under the normalization, the left side of \eqref{eq:rr-norm} is at most one.  Thus \eqref{eq:rr-norm} implies
+\(\|\E_{m,n}(A)\|\le\fall nm\), which is equivalent to \eqref{eq:normalized} because the sum is Hermitian.
+
+Conversely, let \(S=\sum_iA_i\) and \(t=\|S\|/n\).  If \(t>0\), the matrices \(B_i=A_i/t\) satisfy \(\sum_iB_i\preceq nI\).  Applying \eqref{eq:normalized} and using homogeneity gives
+\[
+ \|\E_{m,n}(A)\|\le\fall nm\,t^m
+ =\fall nm\left\|\frac{S}{n}\right\|^m.
+\]
+The case \(t=0\) is immediate.
+\end{proof}
+
+\begin{theorem}[Low-length Recht--R\'e inequalities]\label{thm:main}
+Let \(A_1,\ldots,A_n\) be positive semidefinite Hermitian matrices of arbitrary common dimension and suppose that \(\sum_iA_i\preceq nI\).
+\begin{enumerate}
+\item For every integer \(n\ge4\),
+\begin{equation}\label{eq:thm-m4}
+ -\fall n4I\preceq\E_{4,n}(A)\preceq\fall n4I.
+\end{equation}
+\item For every integer \(n\ge5\),
+\begin{equation}\label{eq:thm-m5-upper}
+ \E_{5,n}(A)\preceq\fall n5I.
+\end{equation}
+\item For every integer \(n\ge6\),
+\begin{equation}\label{eq:thm-m5-lower}
+ -\fall n5I\preceq\E_{5,n}(A).
+\end{equation}
+\item The threshold \(n=6\) in part~(3) is sharp.  At \(n=5\), De Sa's explicit rational positive semidefinite family has \(\sum_{k=1}^5A_k=5I\) and makes \(\E_{5,5}(A)\) have eigenvalue
+\(-285/2<-120\)~\cite{DeSa2020}.
+\item If \(7\mid n\), then
+\begin{equation}\label{eq:thm-m6-upper}
+ \E_{6,n}(A)\preceq\fall n6I.
+\end{equation}
+\item If \(8\mid n\), then
+\begin{equation}\label{eq:thm-m6-lower}
+ -\fall n6I\preceq\E_{6,n}(A).
+\end{equation}
+\end{enumerate}
+Consequently \eqref{eq:rr-norm} holds for \(m=4\) and every \(n\ge4\), and for \(m=5\) and every \(n\ge6\).
+It also holds for \(m=6\) whenever \(56\mid n\).
+\end{theorem}
+
+The proof has a stable parametric part and exceptional endpoints.  Sections~\ref{sec:free}--\ref{sec:positivity} prove both signs for \(m=4,n\ge5\) and \(m=5,n\ge6\).  Section~\ref{sec:endpoints} supplies the two-sided \(m=4,n=4\) certificate and the upper \(m=5,n=5\) certificate.
+Section~\ref{sec:m6-balanced} proves the balanced-multiple clauses.
+
+\section{One free-localizer architecture}\label{sec:free}
+
+Work in the real free \(*\)-algebra on self-adjoint generators \(x_1,\ldots,x_n\).  Let
+\[
+ \beta_n=(1;\ x_i;\ x_ix_j)_{i,j\in[n]},
+ \qquad |\beta_n|=1+n+n^2,
+\]
+be the column vector of all words of length at most two.  For a real symmetric matrix \(Q=(Q_{uv})\), indexed by these words, and a self-adjoint free polynomial \(g\), define
+\[
+ \Lcal_g(Q)=\sum_{u,v}Q_{uv}\,u^\ast gv.
+\]
+If \(Q\succeq0\) and \(g(A)\succeq0\), then \(\Lcal_g(Q)(A)\succeq0\).  Indeed, a Gram factorization \(Q=C^{\mathsf T}C\) writes the localizer as \(\sum_r f_r^\ast g f_r\).  This direct argument applies to complex Hermitian substitutions and is the load-bearing free sum-of-squares step.  The broader convex free Positivstellensatz is due to Helton, Klep, and McCullough~\cite{HKM2012}; its completeness direction is not needed here.  The application of this framework to the Recht--R\'e problem is due to Lai and Lim~\cite{LaiLim2020}.
+
+Put
+\[
+ e_{m,n}(x)=
+ \sum_{\substack{i_1,\ldots,i_m\in[n]\\\mathrm{all\ distinct}}}
+ x_{i_1}\cdots x_{i_m},
+ \qquad
+ g_n(x)=n-\sum_{i=1}^n x_i.
+\]
+For \(\sigma\in\{\up,\low\}\), let \(G_{m,n}^{\sigma}\) be invariant under the stabilizer of the distinguished generator \(1\), let \(H_{m,n}^{\sigma}\) be invariant under \(S_n\), and let \(G_{m,n,i}^{\sigma}\) be the relabeling that moves the distinguished generator to \(i\).
+
+\begin{proposition}[Stable parametric certificates]\label{prop:parametric}
+Let \(b_m=m+1\).  For \(m=4\) and every integer \(n\ge5\), and for \(m=5\) and every integer \(n\ge6\), exact rational Gram matrices satisfy
+\begin{align}
+ \fall nm-e_{m,n}(x)
+ &=\sum_{i=1}^n\Lcal_{x_i}(G_{m,n,i}^{\up})
+   +\Lcal_{g_n}(H_{m,n}^{\up}),\label{eq:cert-upper}\\
+ \fall nm+e_{m,n}(x)
+ &=\sum_{i=1}^n\Lcal_{x_i}(G_{m,n,i}^{\low})
+   +\Lcal_{g_n}(H_{m,n}^{\low}).\label{eq:cert-lower}
+\end{align}
+At these integer parameters,
+\[
+ G_{m,n}^{\up}\succeq0,\qquad
+ H_{m,n}^{\up}\succ0,\qquad
+ G_{m,n}^{\low}\succ0,\qquad
+ H_{m,n}^{\low}\succ0.
+\]
+The upper \(G\)-matrix has exactly one equality-forced kernel direction.
+\end{proposition}
+
+Evaluation at \(x_i=A_i\) proves the stable-range clauses of Theorem~\ref{thm:main}.  The coefficient equalities in \eqref{eq:cert-upper}--\eqref{eq:cert-lower} are rational identities in a formal parameter \(n\).  The symmetry-reduced blocks extend algebraically to real \(n\ge b_m\), where their positivity is proved below.  The full Gram matrices and the operator theorem, however, are asserted only at integer \(n\).
+
+\subsection{Orbit coordinates and exact affine transversals}
+
+A symmetric Gram entry is determined by the equality pattern in its pair of
+basis words, with transpose-equivalent entries identified.  The precise
+encoder used here concatenates \(u\), a separator, and \(v\); relabels
+letters \(0,1,\ldots\) by order of first occurrence; and takes the
+lexicographically smaller of the encodings of \((u,v)\) and \((v,u)\).
+For a \(G\)-entry, the distinguished letter is preassigned label \(0\), and
+all movable letters are numbered from \(1\).
+
+\begin{lemma}[Orbit-classifier completeness]\label{lem:orbit-classifier}
+For words \(u,v\) of length at most two, two symmetric entries have the same
+canonical key if and only if they lie in the same \(S_n\)-orbit for \(H\), or
+the same point-stabilizer orbit for \(G\).  The statement is stable for
+\(n\ge4\) in the \(H\) case and \(n\ge5\) in the \(G\) case.
+\end{lemma}
+
+\begin{proof}
+A relabeling permutation, and interchange of \(u,v\), plainly preserves the
+key.  Conversely, equal keys give an equality-preserving bijection between
+the letters occurring in the two pairs, preserving the distinguished letter
+when present.  Each pair uses at most four movable letters.  In the stated
+ranges this partial bijection extends arbitrarily to a permutation of all
+labels, proving orbit equivalence.
+\end{proof}
+
+Exhaustive key generation consequently gives
+\[
+ 59\quad S_{n-1}\text{-orbits for }G,
+ \qquad
+ 22\quad S_n\text{-orbits for }H.
+\]
+Number the coordinates \(z_0,\ldots,z_{58}\) for \(G\) and
+\(z_{59},\ldots,z_{80}\) for \(H\).  This is the general
+symmetry-reduction strategy of Gatermann and Parrilo
+~\cite{GatermannParrilo2004}.  Restricted-growth strings similarly classify
+free words through degree five.  Their number is the Bell-number sum
+\[
+ B_0+B_1+B_2+B_3+B_4+B_5=1+1+2+5+15+52=76.
+\]
+
+Expansion through degree five gives 76 canonical word-pattern equations per sign.  The upper equations, augmented by the equality-kernel equations, have exact rank \(58\) and leave 23 free coordinates.  The lower system has rank \(51\) and leaves 30.  Both product lengths use the same transversals
+\begin{align*}
+ \mathcal F_{\up}
+ &=\{17,21,23,25,61,62,64,65,66,67,68,69,70,71,72,\\
+ &\hspace{8.3em}73,74,75,76,77,78,79,80\},\\
+ \mathcal F_{\low}
+ &=\{6,8,9,15,16,17,21,23,25,60,61,62,63,64,65,66,\\
+ &\hspace{8.3em}67,68,69,70,71,72,73,74,75,76,77,78,79,80\}.
+\end{align*}
+Exact elimination verifies that the complementary columns have full rank, so these sets are genuine affine transversals.  The machine-readable release contains all 81 orbit functions for each sign and each product length, 324 functions in total.
+
+The seeds were found by symmetry-reduced numerical feasibility searches.  Only the selected free coordinates were rounded; the remaining entries were reconstructed by exact rational linear algebra in the style of Peyrl and Parrilo~\cite{PeyrlParrilo2008}.  Numerical values are discarded before acceptance.  Every identity, affine rank, block entry, determinant, kernel, and endpoint test is recomputed exactly over \(\mathbb Q\).
+
+\section{Balanced seeds and rational continuation}\label{sec:continuation}
+
+The following theorem extracts the reusable part of the two computations.
+It concerns coefficient identities only; its final sentence is a necessary
+guard against an invalid positivity continuation.
+
+\begin{theorem}[Balanced seed continuation]\label{thm:balanced-continuation}
+Fix \(b\ge m\) and a word cutoff \(\ell\) with \(m\le2\ell+1\).
+For \(\varepsilon\in\{-1,1\}\), suppose that exact symmetric matrices indexed
+by words of length at most \(\ell\) satisfy
+\begin{equation}\label{eq:general-seed}
+ \fall bm+\varepsilon e_{m,b}
+ =
+ \sum_{a=1}^{b}\Lcal_{x_a}(G_{b,a}^{\varepsilon})
+ +\Lcal_{g_b}(H_b^{\varepsilon}),
+\end{equation}
+where the \(G\)-family is equivariant under relabeling and \(H_b^\varepsilon\)
+is \(S_b\)-invariant.  Suppose further that the equality-pattern and
+Gram-orbit coordinate sets have stabilized for integers \(n\ge N_0\).
+
+Define the entries \(G_{m,n,i}^{\varepsilon}\) and
+\(H_{m,n}^{\varepsilon}\) by
+\eqref{eq:hypergeometric}--\eqref{eq:G-continuation} below.  They are rational
+functions of \(n\), and at every integer \(n\ge N_0\) where they are finite,
+\begin{equation}\label{eq:general-continuation}
+ \fall nm+\varepsilon e_{m,n}
+ =
+ \sum_{i=1}^{n}\Lcal_{x_i}(G_{m,n,i}^{\varepsilon})
+ +\Lcal_{g_n}(H_{m,n}^{\varepsilon}).
+\end{equation}
+The theorem does not assert positive semidefiniteness of the continued
+matrices.
+\end{theorem}
+
+To define the continuation, let \(u,v\) be basis words,
+\(d=|u|+|v|\), and let \(S_H\) be their set of distinct letters.  For a
+\(G\)-entry put \(S_G=S_H\cup\{0\}\), where \(0\) denotes the distinguished
+letter.  If \(S\) is either set and \(\phi:S\to[b]\), write
+\(m_a(\phi)=|\phi^{-1}(a)|\) and define the formal hypergeometric functional
+\begin{equation}\label{eq:hypergeometric}
+ \mathfrak A_{n,b,S}[F]
+ =
+ \frac1{\fall n{|S|}}
+ \sum_{\phi:S\to[b]}
+ \prod_{a=1}^b\fall{n/b}{m_a(\phi)}F(\phi).
+\end{equation}
+At \(n=br\), this is a genuine balanced multivariate hypergeometric
+expectation.  Outside those multiples it is only a rational functional.  The
+continued entries are
+\begin{align}
+ H_{m,n}^{\varepsilon}(u,v)
+ &=
+ \frac{\fall nm}{\fall bm}
+ \left(\frac bn\right)^{d+1}
+ \mathfrak A_{n,b,S_H}
+ \!\left[H_b^{\varepsilon}(\phi(u),\phi(v))\right],
+ \label{eq:H-continuation}\\
+ G_{m,n,0}^{\varepsilon}(u,v)
+ &=
+ \frac{\fall nm}{\fall bm}
+ \left(\frac bn\right)^{d+1}
+ \mathfrak A_{n,b,S_G}
+ \!\left[
+ G_{b,\phi(0)}^{\varepsilon}(\phi(u),\phi(v))
+ \right].
+ \label{eq:G-continuation}
+\end{align}
+In \eqref{eq:G-continuation}, the color \(\phi(0)\) is relabeled as distinguished.
+
+\begin{proof}
+First let \(n=br\).  Choose a uniformly random coloring
+\(\chi:[n]\to[b]\) with every color class of size \(r\), and substitute
+\[
+ y_a=\frac1r\sum_{\chi(i)=a}x_i
+ \qquad(a\in[b])
+\]
+in \eqref{eq:general-seed}.  Multiply by
+\(\fall nm/\fall bm\) and average over \(\chi\).  A fixed ordered tuple of
+distinct indices receives coefficient one because
+\begin{equation}\label{eq:balanced-probability}
+ \Pr\{\chi(i_1),\ldots,\chi(i_m)\text{ are distinct}\}
+ =\frac{\fall bm r^m}{\fall nm},
+\end{equation}
+while expansion contributes \(r^{-m}\); a tuple with a repeated index
+cannot occupy distinct color classes.  Moreover
+\[
+ g_b(y)=\frac1r g_n(x).
+\]
+The two basis words and the localizing multiplier therefore contribute
+\(r^{-(d+1)}=(b/n)^{d+1}\).  Restricting \(\chi\) to the letters in
+\(S_H\) or \(S_G\) gives exactly
+\eqref{eq:hypergeometric}--\eqref{eq:G-continuation}.  Thus
+\eqref{eq:general-continuation} holds at every positive multiple of \(b\).
+
+For fixed \(u,v\), \eqref{eq:hypergeometric} is a finite sum of products of
+falling-factorial polynomials divided by \(\fall n{|S|}\), so every entry
+is rational in \(n\).  After orbit stability, each free-word coefficient of
+the difference in \eqref{eq:general-continuation} is one fixed rational
+function.  It vanishes at the infinitely many multiples \(br\), hence
+vanishes identically and may be specialized at every pole-free integer in
+the stated range.
+
+At a genuine multiple, positive semidefinite seed matrices remain positive
+under the averaged congruences.  At a nonmultiple, however, the factors
+\(\fall{n/b}{k}\) in \eqref{eq:hypergeometric} are algebraic weights, not
+probabilities.  Neither rational continuation nor positivity on infinitely
+many multiples proves positivity between them.
+\end{proof}
+
+The present package specializes Theorem~\ref{thm:balanced-continuation} with
+\[
+ \ell=2,\qquad (m,b)=(4,5)\ \text{or}\ (5,6).
+\]
+Its 76 word-pattern coordinates are stable in the claimed ranges.  The
+published entries have no positive-integer poles there, and the exact
+verifiers additionally substitute them into all 152 upper/lower equations
+for each product length.  Positivity at nonmultiples is the separate content
+of Section~\ref{sec:positivity}.
+
+The resulting orbit functions have the form
+\[
+ z_j(n)=\frac{p_j(n)}{c_jn^{q_j}},
+ \qquad
+ p_j\in\mathbb Z[n],\quad c_j\in\mathbb N,\quad 0\le q_j\le4,
+\]
+with \(\deg p_j\le3\) for \(m=4\) and \(\deg p_j\le4\) for \(m=5\).  Concrete fingerprints include
+\begin{align*}
+ z_{17}^{(4,\up)}(n)
+ &=-\frac{5(n-3)(n-2)(1451n-2255)}{128n^3},\\
+ z_{80}^{(4,\low)}(n)
+ &=\frac{4999n^3-35490n^2+84725n-74250}{192n^4},\\
+ z_{17}^{(5,\up)}(n)
+ &=-\frac{3(n-2)(n-3)(n-4)(292n-627)}{500n^3},\\
+ z_{80}^{(5,\low)}(n)
+ &=\frac{(n-4)(7n^3-47637n^2+143442n-49572)}
+ {2500n^4}.
+\end{align*}
+In both families, the forced constant-coordinate fingerprint is
+\[
+ z_{59}^{(m,\up)}(n)=z_{59}^{(m,\low)}(n)
+ =\fall{n-1}{m-1}.
+\]
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Certificate datum & \(m=4\) & \(m=5\)\\
+\midrule
+Balanced seed size \(b\) & \(5\) & \(6\)\\
+Numerator degree bound & \(3\) & \(4\)\\
+Stable positivity shift & \(n-5\) & \(n-6\)\\
+Stable integer range & \(n\ge5\) & \(n\ge6\)\\
+Separate endpoint & two-sided \(n=4\) & upper \(n=5\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Six-factor balanced-multiple families}\label{sec:m6-balanced}
+
+The balanced theorem also extracts a rigorous result from the previously
+incomplete six-factor snapshot without reconstructing its missing parametric
+representation bases.  Use the degree-three word vector
+\[
+ \beta_n^{(3)}=(w:\ |w|\le3),\qquad
+ |\beta_n^{(3)}|=1+n+n^2+n^3.
+\]
+A pair of these words contains at most six movable labels.  The proof of
+Lemma~\ref{lem:orbit-classifier} therefore gives stable orbit encoders from
+\(n=6\) for \(H\) and \(n=7\) for the point-stabilized \(G\).  Direct
+enumeration gives
+\[
+ 797\quad G\text{-orbits},\qquad 211\quad H\text{-orbits}.
+\]
+At \(n=6\), the \(G\)-count is \(796\), reflecting one small-parameter
+partition collision.  Free words through degree seven have
+\[
+ \sum_{j=0}^{7}B_j
+ =1+1+2+5+15+52+203+877=1156
+\]
+equality patterns.
+
+The reconstructed upper and lower lists each contain 1,008 rational
+functions, ordered as 797 \(G\)-coordinates followed by 211
+\(H\)-coordinates.  The first \(H\)-entry is the forced fingerprint
+\[
+ z_{797}(n)=\fall{n-1}{5}.
+\]
+All denominators are positive constants times \(n^q\), \(0\le q\le6\).
+Fresh deterministic reconstruction of the orbit maps and direct substitution gives
+\begin{align}
+ \fall n6-e_{6,n}(x)
+ &=\sum_{i=1}^n\Lcal_{x_i}(G_{6,n,i}^{\up})
+   +\Lcal_{g_n}(H_{6,n}^{\up}),\label{eq:m6-upper-identity}\\
+ \fall n6+e_{6,n}(x)
+ &=\sum_{i=1}^n\Lcal_{x_i}(G_{6,n,i}^{\low})
+   +\Lcal_{g_n}(H_{6,n}^{\low}).\label{eq:m6-lower-identity}
+\end{align}
+The program
+\path{releases/m6-balanced/check_parametric_identities.py}
+verifies all 1,156 rational coefficient equations for each sign exactly.
+
+It remains to prove that the two base identities have positive semidefinite
+Gram matrices.  The following elementary criterion avoids the unavailable
+symmetry-adapted bases.
+
+\begin{lemma}[Characteristic-polynomial PSD criterion]
+\label{lem:charpoly-psd}
+Let \(A\) be a real symmetric matrix and write
+\[
+ q_A(t)=\det(tI+A).
+\]
+Then \(A\succeq0\) if and only if every coefficient of \(q_A\) is
+nonnegative.
+\end{lemma}
+
+\begin{proof}
+If the eigenvalues \(\lambda_i\) are nonnegative, then
+\(q_A(t)=\prod_i(t+\lambda_i)\) has nonnegative coefficients.  Conversely,
+symmetry makes all roots real.  Nonnegative coefficients and positive leading
+coefficient imply \(q_A(t)>0\) for every \(t>0\), so no root
+\(-\lambda_i\) is positive and no \(\lambda_i\) is negative.
+\end{proof}
+
+At each base, multiply all orbit values by their least common positive
+denominator and construct the full integer Gram matrices.  Exact FLINT
+characteristic polynomials give:
+\begin{center}
+\begin{tabular}{llrrrr}
+\toprule
+Side & Matrix & \(n\) & Size & Rank & Zero coefficients of \(q_A\)\\
+\midrule
+Upper & \(G\) & 7 & 400 & 399 & 1\\
+Upper & \(H\) & 7 & 400 & 400 & 0\\
+Lower & \(G\) & 8 & 585 & 585 & 0\\
+Lower & \(H\) & 8 & 585 & 585 & 0\\
+\bottomrule
+\end{tabular}
+\end{center}
+Every other coefficient is strictly positive.  The common denominators are
+\(16{,}941{,}456{,}000{,}000\) at the upper base and
+\(262{,}144{,}000{,}000\) at the lower base.  The SHA-256 digests below hash
+FLINT's raw coefficient lists for \(\det(xI-A)\), in ascending degree,
+serialized as newline-separated ASCII integers with no trailing newline
+before conversion to
+\(\det(tI+A)\).  In table order they are
+\begin{align*}
+&\texttt{c95af891ab9992fd2681af349044732a988ba147db9e43eec4288e2317589f51},\\
+&\texttt{a8bbe7306acc878d612c8d8bd3695a036d35852e3d1257263205ec809a497419},\\
+&\texttt{bd0867a98fd93a7cb624200f7d965cf4983448e0cf30c843d7b7fd7a49729a03},\\
+&\texttt{32e99420c0feb2bbbcd08fdf4e40fc2847ed1ab945620073397b5394d75b6a46}.
+\end{align*}
+The program
+\path{releases/m6-balanced/certify_base_psd_flint.py}
+reconstructs the matrices, ranks, characteristic polynomials, coefficient
+signs, and digests from the rational functions.
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}, parts (5)--(6)]
+Equations \eqref{eq:m6-upper-identity} and
+\eqref{eq:m6-lower-identity}, specialized at \(n=7\) and \(n=8\),
+respectively, are exact seed identities.  Lemma~\ref{lem:charpoly-psd} and the
+computed ranks prove that the upper \(G_7,H_7\) matrices are positive
+semidefinite and that the lower \(G_8,H_8\) matrices are positive definite.
+
+Apply the genuine balanced-coloring construction in
+Theorem~\ref{thm:balanced-continuation} to the upper seed with \(b=7\) and to
+the lower seed with \(b=8\).  Positive scalar multiples, congruences, and
+averages preserve positive semidefiniteness.  Evaluation on
+\(A_1,\ldots,A_n\) proves \eqref{eq:thm-m6-upper} when \(7\mid n\) and
+\eqref{eq:thm-m6-lower} when \(8\mid n\).  Both signs hold when
+\(56\mid n\).
+\end{proof}
+
+The rational identities themselves remain valid at every stable positive
+integer, but no positivity inference is made for nonmultiples of the
+corresponding seed.  The missing degree-three representation bases and
+all-\(n\) block-minor proof remain an open extension.
+
+\section{Fixed symmetry blocks and uniform positivity}\label{sec:positivity}
+
+Let \(M_n\cong[n]\oplus[n-1,1]\) be the permutation module.  The word space is
+\[
+ \W_n\cong\one\oplus M_n\oplus(M_n\otimes M_n).
+\]
+Writing \(V=[n-1,1]\) and using
+\[
+ V\otimes V
+ \cong[n]\oplus[n-1,1]\oplus[n-2,2]\oplus[n-2,1,1]
+\]
+gives the complete \(S_n\)-decomposition
+\begin{equation}\label{eq:H-decomposition}
+ \W_n\cong
+ 4[n]\oplus4[n-1,1]\oplus[n-2,2]\oplus[n-2,1,1].
+\end{equation}
+Under the stabilizer \(S_{n-1}\), one has
+\(M_n\cong2[n-1]\oplus[n-2,1]\), and the same calculation gives
+\begin{equation}\label{eq:G-decomposition}
+ \W_n\!\downarrow S_{n-1}
+ \cong
+ 8[n-1]\oplus6[n-2,1]\oplus[n-3,2]\oplus[n-3,1,1].
+\end{equation}
+Symmetric-group irreducibles are absolutely real.  Schur's lemma therefore reduces positivity to the following multiplicity blocks:
+\[
+ G:\ 8,6,1,1,\qquad H:\ 4,4,1,1.
+\]
+The orbit counts agree:
+\[
+ \frac{8\cdot9}{2}+\frac{6\cdot7}{2}+1+1=59,
+ \qquad
+ \frac{4\cdot5}{2}+\frac{4\cdot5}{2}+1+1=22.
+\]
+
+\subsection{Explicit representatives and completeness}
+
+We now specify the vectors used to extract the multiplicity blocks.  This is
+the semantic link between the abstract decompositions and the executable
+matrices.  Let \(I=[n]\) for \(H\) and \(I=[n]\setminus\{0\}\) for \(G\),
+and put
+\[
+ U_I=\left\{a\in\mathbb R^I:\sum_{i\in I}a_i=0\right\}.
+\]
+For \(a\in U_I\), define
+\begin{align*}
+ T_1(a)&=\sum_{i\in I}a_ix_i,
+ &T_2(a)&=\sum_{i\in I}a_ix_i^2,\\
+ T_+(a)&=\sum_{i\ne j}(a_i+a_j)x_ix_j,
+ &T_-(a)&=\sum_{i\ne j}(a_i-a_j)x_ix_j.
+\end{align*}
+These four maps supply the four standard copies in the \(H\)-space.  For
+\(G\), add
+\[
+ T_{0+}(a)=\sum_{i\in I}a_ix_0x_i,\qquad
+ T_{+0}(a)=\sum_{i\in I}a_ix_ix_0,
+\]
+giving six copies.  The trivial representatives are
+\[
+\begin{split}
+ H:\;&1,\ \sum_i x_i,\ \sum_i x_i^2,\ \sum_{i\ne j}x_ix_j,\\
+ G:\;&1,\ x_0,\ \sum_{i\in I}x_i,\ x_0^2,\
+       \sum_{i\in I}x_0x_i,\ \sum_{i\in I}x_ix_0,\
+       \sum_{i\in I}x_i^2,\ \sum_{\substack{i,j\in I\\i\ne j}}x_ix_j.
+\end{split}
+\]
+For distinct \(a,b,c,d\in I\) and distinct \(a,b,c\in I\), respectively,
+take
+\begin{align*}
+ q_{a,b,c,d}
+ &=x_ax_b+x_bx_a+x_cx_d+x_dx_c
+   -x_ax_c-x_cx_a-x_bx_d-x_dx_b,\\
+ c_{a,b,c}
+ &=x_ax_b-x_bx_a+x_bx_c-x_cx_b+x_cx_a-x_ax_c.
+\end{align*}
+The programs use \(a=e_i-e_j\) in the standard maps and one \(q\) and \(c\)
+as representatives of the two multiplicity-one types.
+
+\begin{lemma}[Block-extraction completeness]\label{lem:block-completeness}
+In the stable ranges, the vectors above generate every summand in
+\eqref{eq:H-decomposition} and \eqref{eq:G-decomposition}.  For an invariant
+real symmetric Gram matrix, positivity of the resulting blocks of sizes
+\[
+ H:\ 4,4,1,1,\qquad G:\ 8,6,1,1
+\]
+is equivalent to positivity of the full matrix.
+\end{lemma}
+
+\begin{proof}
+The trivial vectors are invariant and independent.  Each \(T\)-map is an
+equivariant nonzero embedding of the zero-sum permutation module; their
+images are independent by word degree, the position of \(x_0\), and
+transpose symmetry.  On \(q=|I|\) active labels, the orbit of
+\(q_{a,b,c,d}\) spans the symmetric zero-diagonal matrices with zero row
+sums, of dimension \(q(q-3)/2\).  The orbit of \(c_{a,b,c}\) spans the
+skew-symmetric matrices with zero row sums, of dimension
+\((q-1)(q-2)/2\).  These are the irreducibles labelled
+\([q-2,2]\) and \([q-2,1,1]\).  Their dimensions, together with the trivial
+and standard copies, sum to \(1+n+n^2=\dim\W_n\), proving exhaustiveness.
+
+Every real irreducible of a symmetric group is absolutely irreducible.
+Schur's lemma therefore writes an invariant symmetric form on each isotypic
+component as a real symmetric multiplicity matrix tensored with the identity
+on the irreducible.  Contraction against the displayed representatives is a
+positive diagonal congruence of that multiplicity matrix.  Hence the
+displayed block is positive semidefinite if and only if the full isotypic
+restriction is.
+\end{proof}
+
+At \(n=4\), the \(H\)-decomposition remains \(4,4,1,1\).  For the
+point stabilizer \(S_3\), the \(q\)-type disappears and the \(c\)-type is the
+sign representation, giving endpoint blocks \(8,6,1\).  The independent
+semantic checker constructs the cyclic spans under adjacent transpositions,
+obtains full word-space rank, and verifies contraction-map ranks
+\[
+ \operatorname{rank}H=22,\qquad
+ \operatorname{rank}G=59,\qquad
+ \operatorname{rank}G|_{n=4}=58.
+\]
+
+The degree profiles of the explicit test vectors are
+\begin{center}
+\begin{tabular}{ccl}
+\toprule
+Matrix & Block sizes & Word-degree profiles\\
+\midrule
+\(G\) & \(8,6,1,1\) &
+\((0,1,1,2,2,2,2,2)\), \((1,2,2,2,2,2)\), \((2)\), \((2)\)\\
+\(H\) & \(4,4,1,1\) &
+\((0,1,2,2)\), \((1,2,2,2)\), \((2)\), \((2)\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{lemma}[Degree-four contraction counts]\label{lem:counting-degree}
+Every coefficient with which a stable Gram-orbit coordinate enters one of the
+displayed representation blocks is an integer-valued polynomial in \(n\) of
+degree at most four.
+\end{lemma}
+
+\begin{proof}
+Expand a pair of representative vectors before contraction.  Each basis word
+contains at most two labels, so a pair contains at most four freely summed
+labels.  The coefficients \(a_i\) in the standard vectors are finite signed
+indicator combinations after fixing \(a=e_r-e_s\).  For a fixed Gram-orbit
+condition, partition the remaining assignments by their equality pattern.
+Each class has cardinality \(c(n-c_0)_t\) for fixed integers \(c,c_0\) and
+\(0\le t\le4\).  The contraction coefficient is a finite signed sum of these
+falling-factorial polynomials.
+\end{proof}
+
+Lemma~\ref{lem:counting-degree} makes five exact values sufficient to
+interpolate every block-count polynomial.  The original verifiers test an
+additional out-of-sample size.  The semantic checker evaluates eight stable
+sizes and independently verifies that every fifth finite difference
+vanishes.
+
+For a block \(B_m(n)\) with degree profile \((d_1,\ldots,d_s)\), set
+\[
+ D(n)=\operatorname{diag}(n^{d_1},\ldots,n^{d_s}),
+ \qquad
+ \widehat B_m(n)=nD(n)B_m(n)D(n).
+\]
+This is a positive diagonal congruence for \(n>0\).  Every entry of
+\(\widehat B_m(n)\) is a polynomial in \(n\), up to a positive constant denominator.  For each nonsingular block and each leading principal order \(k\), the released exact determinant has the form
+\begin{equation}\label{eq:positive-minor}
+ \det\widehat B_m(n)_{[k]}
+ =
+ \frac1{c_{m,B,k}}
+ \sum_{j=0}^{d_{m,B,k}}
+ a_{m,B,k,j}(n-b_m)^j,
+ \qquad
+ c_{m,B,k}>0,\quad a_{m,B,k,j}>0.
+\end{equation}
+Sylvester's criterion proves that every nonsingular algebraic block family is positive definite for every real parameter \(n\ge b_m\).
+
+The only singular block is the upper \(8\times8\) trivial block of \(G\).  In scaled coordinates it satisfies
+\begin{equation}\label{eq:common-kernel}
+ \widehat B_{m,G,\up}(n)
+ \begin{pmatrix}n^2&n&n&1&1&1&1&1\end{pmatrix}^{\mathsf T}=0.
+\end{equation}
+Its leading \(7\times7\) submatrix satisfies \eqref{eq:positive-minor}.  If the full block is
+\(\bigl(\begin{smallmatrix}A&b\\b^{\mathsf T}&c\end{smallmatrix}\bigr)\),
+the kernel relation gives \(b=-Au\) and \(c=u^{\mathsf T}Au\).  The block is therefore congruent to \(A\oplus0\), positive semidefinite, and of corank one.
+
+\begin{center}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Multiplicity block & Upper/lower minors & Max.\ degree \(m=4\) & Max.\ degree \(m=5\)\\
+\midrule
+\(G\) trivial, \(8\times8\) & \(7/8\) & \(44\) & \(52\)\\
+\(G\) standard, \(6\times6\) & \(6/6\) & \(28\) & \(34\)\\
+\(G\) exceptional scalars & \(2/2\) & \(4\) & \(5\)\\
+\(H\) trivial, \(4\times4\) & \(4/4\) & \(24\) & \(28\)\\
+\(H\) standard, \(4\times4\) & \(4/4\) & \(20\) & \(24\)\\
+\(H\) exceptional scalars & \(2/2\) & \(4\) & \(5\)\\
+\midrule
+Total & \(25/26\) & \(51\) minors & \(51\) minors\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+For \(m=4\), the 25 upper minors contain 365 positive shifted coefficients and the 26 lower minors contain 410, for a total of 775.  For \(m=5\), the corresponding counts are 438 and 491, for a total of 929.  Thus the unified proof contains 102 reconstructed leading-principal-minor polynomials and 1,704 strictly positive shifted coefficients.  This proves Proposition~\ref{prop:parametric}.
+
+\section{Exceptional endpoints}\label{sec:endpoints}
+
+\subsection{The two-sided four-factor endpoint \texorpdfstring{\(n=4\)}{n=4}}
+
+The continued base-five family is not positive at \(n=4\), where the stable representation decomposition changes.  A separate exact rational certificate supplies both identities
+\[
+ \fall44\mp e_{4,4}(x)
+ =
+ \sum_{i=1}^4\Lcal_{x_i}(G_{4,4,i}^{\up/\low})
+ +\Lcal_{g_4}(H_{4,4}^{\up/\low}).
+\]
+The same 59+22 orbit convention is retained, but only entries realized on the 21-word basis occur.  The 23 upper and 30 lower free values have denominators dividing \(100\).
+
+Under \(S_4\), the \(H\)-word space has blocks of sizes \(4,4,1,1\).  Under the stabilizer \(S_3\), the \(G\)-word space has blocks of sizes \(8,6,1\), the last being the sign representation.  Every lower block and every upper \(H\)-block passes exact rational Sylvester tests.  The upper \(G\)-trivial block annihilates the all-ones vector, and its restriction through
+\[
+ P=\begin{pmatrix}I_7\\-\one_7^{\mathsf T}\end{pmatrix}
+\]
+is positive definite.  Both exact implementations check all 76 coefficient equations for each sign and every required determinant.  This proves \eqref{eq:thm-m4} at \(n=4\).
+
+\subsection{The five-factor upper endpoint \texorpdfstring{\(n=5\)}{n=5}}
+
+The continued base-six family is not used at \(n=5\).  A separate exact certificate satisfies
+\begin{equation}\label{eq:m5-endpoint}
+ 120-e_{5,5}(x)
+ =
+ \sum_{i=1}^5\Lcal_{x_i}(G_{5,5,i}^{\up})
+ +\Lcal_{g_5}(H_{5,5}^{\up}).
+\end{equation}
+Its 23 free coordinates are supplied in the machine-readable endpoint
+certificate indexed in Appendix~\ref{app:inventory}.  Exact coefficient
+expansion verifies \eqref{eq:m5-endpoint}.  The upper \(G\)-trivial block has
+the all-ones kernel and is positive definite on its seven-dimensional
+complement; every other representation block passes exact rational Sylvester
+tests.  Hence
+\(\E_{5,5}(A)\preceq120I\), proving \eqref{eq:thm-m5-upper} at the endpoint.
+
+\subsection{An exact lower counterexample at \texorpdfstring{\(m=n=5\)}{m=n=5}}\label{sec:desa}
+
+Let \(\one=(1,1,1,1,1)^{\mathsf T}\), let \(e_k\) be the \(k\)th coordinate vector, and define
+\[
+ y_k=\frac12e_k-\frac1{10}\one,\qquad
+ A_k=I+\one y_k^{\mathsf T}+y_k\one^{\mathsf T}
+ \quad(k=1,\ldots,5).
+\]
+Thus \((y_k)_k=2/5\), while every other coordinate is \(-1/10\), so all entries of \(A_k\) are rational.  One has
+\[
+ \one^{\mathsf T}y_k=0,\qquad
+ y_k^{\mathsf T}y_k=\frac15.
+\]
+On \(\operatorname{span}\{\one,y_k\}\), the rank-two perturbation
+\(\one y_k^{\mathsf T}+y_k\one^{\mathsf T}\) has eigenvalues \(1\) and \(-1\); on the orthogonal complement it vanishes.  Hence \(A_k\) has eigenvalues \(2,0,1,1,1\) and is positive semidefinite.  Since \(\sum_ky_k=0\),
+\[
+ \frac15\sum_{k=1}^5A_k=I.
+\]
+
+De Sa's exact symmetrized-product evaluation is
+\begin{equation}\label{eq:desa-product}
+ \frac1{120}\E_{5,5}(A)
+ =
+ \frac{29}{64}\left(I-\frac15\one\one^{\mathsf T}\right)
+ -\frac{19}{16}\frac15\one\one^{\mathsf T}.
+\end{equation}
+The package verifies \eqref{eq:desa-product} by exact rational enumeration of all \(5!=120\) products.  The all-ones direction therefore has eigenvalue \(-19/16\) for the normalized sum, and \(\E_{5,5}(A)\) has eigenvalue
+\[
+ 120\left(-\frac{19}{16}\right)=-\frac{285}{2}<-120.
+\]
+This proves the exact lower failure and the sharpness clause of Theorem~\ref{thm:main}.  Lai and Lim's earlier numerical SDP and approximate Farkas evidence remain historically important but are no longer the sole sharpness input.
+
+\section{Finite-horizon quadratic interpretation}\label{sec:optimization}
+
+Consider common-minimizer quadratics on \(\mathbb R^d\),
+\[
+ f_i(x)=\frac12x^{\mathsf T}H_ix,\qquad
+ 0\preceq\eta H_i\preceq I,
+\]
+and put \(B_i=I-\eta H_i\).  One gradient step on component \(i\) is the
+linear update \(x\leftarrow B_ix\).  For \(m\) uniform draws without
+replacement and \(m\) independent uniform draws with replacement, the
+expected-iterate operators are
+\begin{equation}\label{eq:update-operators}
+ R_{\mathrm{wo}}^{(m)}
+ =\frac1{\fall nm}\E_{m,n}(B),
+ \qquad
+ R_{\mathrm{wr}}^{(m)}
+ =\left(\frac1n\sum_{i=1}^{n}B_i\right)^m.
+\end{equation}
+The harmless reversal between algorithmic and displayed product order
+permutes the averaged tuples.  Hence
+\[
+ \sup_{\|x_0\|=1}\|\mathbb E x_m\|
+ =\|R^{(m)}\|.
+\]
+
+\begin{corollary}[Expected-iterate comparison and sharp failure]
+\label{cor:quadratic}
+For the quadratic updates above,
+\[
+ \|R_{\mathrm{wo}}^{(4)}\|
+ \le\|R_{\mathrm{wr}}^{(4)}\|
+ \quad(n\ge4),
+\qquad
+ \|R_{\mathrm{wo}}^{(5)}\|
+ \le\|R_{\mathrm{wr}}^{(5)}\|
+ \quad(n\ge6).
+\]
+At \(m=n=5\), there are exact rational contraction updates for which the
+reverse strict inequality holds:
+\[
+ \|R_{\mathrm{wo}}^{(5)}\|=\frac{19}{512}
+ >
+ \frac1{32}
+ =\|R_{\mathrm{wr}}^{(5)}\|.
+\]
+\end{corollary}
+
+\begin{proof}
+The first two inequalities are the norm consequences of
+Theorem~\ref{thm:main}, applied to the positive semidefinite matrices \(B_i\).
+For the final statement, take the matrices \(A_i\) from
+Section~\ref{sec:desa}, put
+\[
+ C_i=\frac12A_i,\qquad H_i=I-C_i,\qquad \eta=1,
+\]
+and use \(B_i=C_i\).  Each \(C_i\) has spectrum
+\(\{0,\frac12,\frac12,\frac12,1\}\), so both \(C_i\) and \(H_i\) are positive
+semidefinite, and \(\frac15\sum_iC_i=I/2\).  If
+\(P_{\one}=\one\one^{\mathsf T}/5\) and \(P_{\perp}=I-P_{\one}\), scaling
+\eqref{eq:desa-product} gives
+\[
+ R_{\mathrm{wo}}^{(5)}
+ =\frac{29}{2048}P_{\perp}-\frac{19}{512}P_{\one},
+ \qquad
+ R_{\mathrm{wr}}^{(5)}=\left(\frac12I\right)^5=\frac1{32}I.
+\]
+The two exact norms follow.
+\end{proof}
+
+\begin{proposition}[One-epoch bias--mean-square reversal]
+\label{prop:metric-reversal}
+For the five contractions \(C_i=A_i/2\) in the proof of
+Corollary~\ref{cor:quadratic}, put
+\[
+ P(i_1,\ldots,i_5)=C_{i_5}\cdots C_{i_1}.
+\]
+Let \(M_{\rm RR}\) average \(P^{\mathsf T}P\) over the \(5!\) permutations
+and let \(M_{\rm WR}\) average it over five independent uniform draws.  Then
+\begin{align*}
+ M_{\rm RR}
+ &=\frac{1435}{1048576}P_{\perp}
+   +\frac{421}{131072}P_{\one},\\
+ M_{\rm WR}
+ &=\frac{365}{65536}P_{\perp}
+   +\frac{91}{8192}P_{\one},
+\end{align*}
+and
+\[
+ M_{\rm WR}-M_{\rm RR}
+ =\frac{4405}{1048576}P_{\perp}
+  +\frac{1035}{131072}P_{\one}\succ0.
+\]
+Consequently random reshuffling gives strictly smaller expected squared
+distance after one epoch for every nonzero initial vector.  Since the average
+objective is \(F(x)=\frac15\sum_i f_i(x)=\frac14\|x\|^2\), it also gives
+strictly smaller expected objective value, even though its expected-iterate
+operator has the larger norm in Corollary~\ref{cor:quadratic}.
+\end{proposition}
+
+\begin{proof}
+Set \(u=\one/\sqrt5\) and \(z_i=\sqrt5\,y_i\), using the vectors from
+Section~\ref{sec:desa}.  Then
+\[
+ C_i=\frac12\bigl(I+uz_i^{\mathsf T}+z_iu^{\mathsf T}\bigr),\qquad
+ \sum_i z_i=0,\qquad
+ z_i^{\mathsf T}z_j=
+ \begin{cases}1,&i=j,\\-1/4,&i\ne j.\end{cases}
+\]
+Thus \(\frac15\sum_i z_iz_i^{\mathsf T}=P_{\perp}/4\).  For independent
+sampling define \(\mathcal T(X)=\frac15\sum_iC_iXC_i\).  A direct substitution
+gives
+\[
+ \mathcal T(aP_{\one}+bP_{\perp})
+ =\frac{a+b}{4}P_{\one}
+  +\left(\frac{a}{16}+\frac b4\right)P_{\perp}.
+\]
+Five exact iterations from \(I=P_{\one}+P_{\perp}\) give the displayed
+\(M_{\rm WR}\).
+
+For reshuffling set \(Q_{\varnothing}=I\) and, for nonempty
+\(S\subseteq[5]\),
+\[
+ Q_S=\frac1{|S|}\sum_{i\in S}C_iQ_{S\setminus\{i\}}C_i.
+\]
+Induction shows that \(Q_S\) averages \(P^{\mathsf T}P\) over every ordering
+of \(S\).  Exact rational evaluation at \(S=[5]\) has common diagonal
+\(2277/1310720\) and common off-diagonal \(1933/5242880\).  Its eigenvalues
+are therefore \(1435/1048576\) on \(\one^\perp\) and \(421/131072\) on
+\(\operatorname{span}\{\one\}\).  Subtracting the two projector forms gives
+the stated positive-definite gap.  The bundled verifier separately enumerates
+all 120 permutations and all \(5^5=3125\) independent words.
+\end{proof}
+
+The reversal in Proposition~\ref{prop:metric-reversal} is instance-specific
+and one-epoch.  It does not order repeated single-shuffle trajectories,
+general noisy or nonlinear SGD, or arbitrary quadratic families.  For a full
+epoch write
+\begin{align*}
+ P_\sigma&=B_{\sigma(n)}\cdots B_{\sigma(1)},
+ &R&=\mathbb E_\sigma P_\sigma,
+ &G&=\frac1n\sum_iB_i,\\
+ W_{\mathrm{RR}}&=R^K,
+ &W_{\mathrm{SS}}&=\mathbb E_\sigma P_\sigma^K,
+ &W_{\mathrm{GD}}&=G^{nK}.
+\end{align*}
+Only \(m=n\) is a full epoch; \(m<n\) is a without-replacement prefix.
+The single-shuffle and second-moment operators therefore require different
+inequalities~\cite{YunSraJadbabaie2021,Peng2026,Liu2026}.
+
+\section{Unified executable verification}\label{sec:verification}
+
+For each of \(m=4,5\), the package contains two exact implementations and one
+derivation cross-check.  It additionally contains complementary exact
+identity and full-matrix PSD programs for \(m=6\), a structurally separate
+semantic checker for the four/five-factor reductions, and a dependency-free
+replay of De Sa's witness and
+Corollary~\ref{cor:quadratic}--Proposition~\ref{prop:metric-reversal}.  The
+release-qualifying command from the package root is
+\begin{verbatim}
+python3 -m venv .venv
+.venv/bin/python -m pip install -r environment/requirements-lock.txt
+.venv/bin/python scripts/replay_all.py --python .venv/bin/python
+\end{verbatim}
+The per-release \texttt{verify.sh} programs are proof-only convenience
+commands; they do not replace the manifest and mutation gates above.
+
+For \(m=4\), \path{releases/m4/verifiers/verify_all_n_stdlib.py} uses only Python's standard library.  It reconstructs direct orbit counts at \(n=5,\ldots,9\), performs an out-of-sample \(n=10\) replay, checks the 152 rational identities, recomputes the 51 determinant polynomials and kernel, and verifies both \(n=4\) endpoint certificates.  The SymPy implementation
+\path{releases/m4/verifiers/verify_all_n_sympy.py} reconstructs the same obligations with a different arithmetic engine.  The program
+\path{releases/m4/src/derive_parametric_family.py} recovers all 162 orbit functions from the exact base-five seeds.
+
+For \(m=5\), \path{releases/m5/verifiers/verify_m5_restoration_stdlib.py} performs direct orbit enumeration at \(n=6,\ldots,10\), an additional \(n=11\) replay, the 152 identities, the 51 determinant polynomials and kernel, specialization back to both base-six seeds, and the \(n=5\) upper endpoint.  The corresponding SymPy implementation is
+\path{releases/m5/verifiers/verify_m5_restoration_sympy.py}.  The program
+\path{releases/m5/src/derive_parametric_family.py} recovers all 162 orbit functions from the exact base-six seeds.
+The standard-library script
+\path{releases/m5/counterexamples/verify_n5_lower_counterexample.py}
+constructs De Sa's five rational matrices, verifies their positive semidefiniteness and arithmetic mean, enumerates all 120 ordered products, checks \eqref{eq:desa-product}, and verifies the violating eigenvalue \(-285/2\).
+It then verifies the contraction/Hessian spectra and the exact
+\(19/512>1/32\) expected-iterate separation, enumerates all 120 reshuffling
+and 3,125 independent-sampling second moments, and checks the strict projector
+gap in Proposition~\ref{prop:metric-reversal}.
+
+For \(m=6\),
+\path{releases/m6-balanced/check_parametric_identities.py} freshly
+reconstructs the 797 point-stabilizer and 211 full-symmetry orbits and checks
+1,156 coefficient equations for each sign.
+\path{releases/m6-balanced/certify_base_psd_flint.py} constructs the
+\(400\times400\) upper and \(585\times585\) lower full Gram matrices, checks
+their exact ranks and the upper all-ones kernel, computes four exact integer
+characteristic polynomials, and requires every published digest and
+coefficient sign.  These programs check complementary obligations and share
+the same canonical orbit implementation; they are not redundant independent
+proofs.
+
+The standard-library program
+\path{scripts/check_semantic_bridge.py} does not read the stored compressed
+coefficient matrices or representation blocks.  It:
+\begin{enumerate}
+\item compares the canonical encoder with literal \(S_5\) and point-stabilizer
+permutation actions;
+\item enumerates every concrete word through degree five;
+\item generates the cyclic spans of all displayed test vectors and checks
+full word-space coverage and contraction ranks \(22,59,58\);
+\item verifies zero fifth finite differences for every contraction
+coefficient over eight stable sizes;
+\item expands seven seed/endpoint certificates over concrete words and applies
+exact LDL tests to fourteen full Gram matrices.
+\end{enumerate}
+Four known-bad fixtures---an omitted word pattern, merged orbit, corrupted
+exceptional vector, and omitted irreducible block---must be explicitly
+rejected in ordinary and optimized Python.
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Exact replay obligation & \(m=4\) & \(m=5\)\\
+\midrule
+Rational coefficient identities & \(152\) & \(152\)\\
+Published orbit functions & \(162\) & \(162\)\\
+Leading-principal-minor records & \(51\) & \(51\)\\
+Positive shifted coefficients & \(775\) & \(929\)\\
+Exceptional endpoint certificates & \(2\) at \(n=4\) & \(1\) at \(n=5\)\\
+Exact endpoint counterexamples & \(0\) & \(1\) at \(n=5\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Six-factor balanced-family obligation & Exact count\\
+\midrule
+Rational orbit functions & \(1008\) per sign\\
+Coefficient identities & \(1156\) per sign\\
+Upper full Gram matrices & \(2\) of size \(400\)\\
+Lower full Gram matrices & \(2\) of size \(585\)\\
+Characteristic-polynomial fingerprints & \(4\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+All load-bearing acceptance arithmetic is exact.  No verifier invokes an SDP
+solver or accepts a claim using a floating-point tolerance.  The release
+receipts record interpreter and dependency versions, source-archive hashes,
+manifest bindings, command/output summaries, and final status.
+
+\paragraph{Reproducibility boundary.}
+The two arithmetic implementations share the certificate data and high-level
+reduction.  The semantic checker materially reduces shared-schema risk, but
+all programs remain part of one package produced in one research process;
+their agreement is not independent reproduction or journal peer review.  The
+derivation programs confirm transport from each exact seed; they do not
+reproduce numerical seed discovery.  The human-readable Lemmas
+\ref{lem:orbit-classifier}, \ref{lem:block-completeness}, and
+\ref{lem:counting-degree} are therefore load-bearing and remain appropriate
+targets for independent expert review.
+
+\section{Limitations and next frontiers}\label{sec:limitations}
+
+The results settle the four- and five-factor strata and establish two
+six-factor arithmetic progressions, but do not restore the false all-\(m\)
+conjecture.  Six-factor positivity at integers not covered by the balanced
+seeds remains open.  The results also do not prove a universal optimization
+advantage for random reshuffling.  Peng's 2026 preprint proves the RR--GD
+comparison under the quantitative conditioning assumption
+\[
+ \left(1-\frac1{4n^2+1}\right)I\preceq A_i\preceq I
+\]
+by a different perturbative argument, while refuting the SS--RR comparison
+even for matrices arbitrarily close to the identity~\cite{Peng2026}.  Liu's
+smooth-convex rate theorem is broader algorithmically but orders a different
+performance guarantee~\cite{Liu2026}.
+
+The exact release begins with rational seed records, not with a reproducible historical discovery run.  The original SDP inputs, complete solver versions, and full discovery logs were not preserved.  Lai and Lim's numerical lower-SDP/Farkas computation is not reproduced, although De Sa's direct rational lower counterexample is replayed exactly.  The candidate has not undergone independent expert reproduction or journal peer review.
+
+The six-factor identity and base-PSD layers are now reproducible, but fifteen
+inputs for the inherited all-\(n\) representation-block builder remain
+missing: the orbit pickle and fourteen interpolation bases.  Reconstructing
+the seven isotypic multiplicity blocks for each of \(G\) and \(H\) would test
+whether the rational families are positive for every \(n\ge7\) (upper) and
+\(n\ge8\) (lower).  The three quarantined endpoint pickles remain only
+putative dual obstructions at upper/lower \(n=6\) and lower \(n=7\).
+Their affine systems and semantic implication have not been recovered; no
+six-factor counterexample or sharp threshold is claimed.
+
+Proposition~\ref{prop:metric-reversal} exactly resolves the palindromic
+second-moment comparison for one canonical five-factor witness and shows that
+bias and mean-square rankings can reverse.  The more consequential open target
+is a general palindromic second-moment theory for
+\(\mathbb E[P^{\mathsf T}P]\), rather than inference from first moments.  A
+natural conditioned program is to determine the largest radius
+\(\delta_{m,n}\) for which the first- or second-moment inequalities hold under
+\((1-\delta_{m,n})I\preceq B_i\preceq I\), and to compare it with Peng's
+sufficient near-identity radius.  These directions are mathematically
+distinct from completing unrestricted \(m=6\), and likely more consequential
+for stochastic-optimization theory.
+
+\section{Conclusion}\label{sec:conclusion}
+
+Exact rational free-localizer certificates completely determine the original
+Recht--R\'e inequality through five factors: the four-factor inequality holds
+for every admissible \(n\), while the five-factor lower bound has the sharp
+restoration threshold \(n=6\).  The balanced seed-continuation theorem
+separates a reusable identity mechanism from the harder positivity problem.
+At six factors, exact full-matrix seed certificates already give upper and
+lower infinite families and the two-sided result on \(56\mathbb N\).
+
+The package closes the principal shared-schema risks in the four- and
+five-factor computation by deriving the orbit classifier, representation
+coverage, and interpolation degree bound in the paper and checking them by a
+structurally separate executable path.  Independent expert reproduction and
+the nonmultiple six-factor positivity problem remain open.  The exact
+quadratic consequences identify a bias--risk reversal on the same rational
+instance: reshuffling worsens the norm of the expected iterate while strictly
+improving one-epoch expected squared error and average objective.
+
+\section{Data, code, and research disclosures}\label{sec:disclosures}
+
+\paragraph{Data and code availability.}
+The exact seeds, endpoint certificates, orbit functions, scaled representation blocks, principal minors, verifiers, requirements, manifests, and replay receipts accompany this manuscript under
+\path{releases/m4} and \path{releases/m5}.  The explicit \(m=n=5\) lower counterexample and its exact replay are under
+\path{releases/m5/counterexamples}.  The six-factor rational functions,
+identity verifier, full-matrix PSD verifier, and exact receipt are under
+\path{releases/m6-balanced}.  Appendix~\ref{app:inventory} gives the
+release-qualified artifact map.  Unverified endpoint duals and incomplete
+all-\(n\) builders remain under \path{exploratory/m6} and are excluded from
+every theorem acceptance path.  The exact version
+\texttt{1.0.0-candidate} is identified by the repository
+\url{https://github.com/ipitchford/exact-low-length-recht-re-inequalities}
+and version DOI
+\href{https://doi.org/10.5281/zenodo.21709239}{10.5281/zenodo.21709239}.
+The repository-owner string is a hosting locator, not an authorship
+attribution.
+Original rights held by the repository maintainer are dedicated under
+CC0-1.0 subject to the exclusions stated in \path{PUBLIC_DOMAIN.md}.  An
+outer release certificate binds the tagged source archive, this PDF, the
+complete fresh-extraction replay transcript, and the internal manifests by
+SHA-256.
+
+\paragraph{Use of artificial intelligence.}
+This public unrefereed candidate was developed through sequential work involving OpenAI GPT-5.6 Sol and Anthropic Fable under human research direction.  The systems contributed to proof search, symbolic-computation design, code generation, adversarial checking, literature triage, and manuscript drafting.  Their outputs are not treated as independent mathematical verification.  The exact certificate package is provided so that every encoded proof obligation can be replayed and audited.  Accountable human authors must review, correct, and accept the manuscript and code before any journal submission.
+
+\paragraph{Author contributions.}
+This candidate is intentionally released under the creator label
+\emph{Anonymous}; no personal name is asserted or implied by that label.
+Accountable journal authorship, affiliations, and CRediT roles remain
+unresolved and must be completed before any journal submission.  AI systems
+are disclosed as tools, not listed as authors.
+
+\paragraph{Ethics declaration.}
+The work uses no human participants, animals, personal data, or clinical material, and required no research-ethics approval.
+
+\paragraph{Competing interests and funding.}
+No competing-interest or external-funding information was supplied for this anonymous candidate.  Any accountable journal authors must confirm both statements before submission.
+
+\appendix
+
+\section{Machine-readable certificate inventory}\label{app:inventory}
+
+The bulk rational tables are published symmetrically as exact JSON rather than
+typeset selectively.  Section~\ref{sec:continuation} gives representative
+closed forms, while the following files determine every coordinate and proof
+obligation.
+
+\subsection*{Four factors}
+\begin{itemize}
+\item \path{releases/m4/certificates/base5_seed_certificates.json}\par
+Exact upper and lower five-variable seeds.
+\item \path{releases/m4/certificates/parametric_orbit_functions.json}\par
+All 81 upper and 81 lower rational orbit functions.
+\item \path{releases/m4/certificates/scaled_block_matrices.json}\par
+Every scaled representation-block entry as a polynomial in \(n-5\).
+\item \path{releases/m4/certificates/principal_minors.json}\par
+All 51 leading-principal-minor polynomials and 775 positive coefficients.
+\item \path{releases/m4/certificates/n4_orbit_certificates.json}\par
+Separate exact upper and lower endpoint certificates.
+\end{itemize}
+
+\subsection*{Five factors}
+\begin{itemize}
+\item \path{releases/m5/certificates/base6_seed_certificates.json}\par
+Exact upper and lower six-variable seeds.
+\item \path{releases/m5/certificates/n5_upper_certificate.json}\par
+Separate exact upper endpoint certificate.
+\item \path{releases/m5/certificates/parametric_orbit_functions.json}\par
+All 81 upper and 81 lower rational orbit functions.
+\item \path{releases/m5/certificates/scaled_block_matrices.json}\par
+Every scaled representation-block entry as a polynomial in \(n-6\).
+\item \path{releases/m5/certificates/principal_minors.json}\par
+All 51 leading-principal-minor polynomials and 929 positive coefficients.
+\item \path{releases/m5/counterexamples/verify_n5_lower_counterexample.py}\par
+Dependency-free exact reconstruction of De Sa's counterexample and the
+quadratic expected-iterate corollary.
+\end{itemize}
+
+\subsection*{Six-factor balanced families}
+\begin{itemize}
+\item \path{releases/m6-balanced/m6_upper_parametric_functions.json}\par
+The 797 upper \(G\) and 211 upper \(H\) rational orbit functions.
+\item \path{releases/m6-balanced/m6_lower_parametric_functions.json}\par
+The corresponding 1,008 lower functions.
+\item \path{releases/m6-balanced/check_parametric_identities.py}\par
+Exact reconstruction of both stable orbit maps and all 2,312 rational
+coefficient identities.
+\item \path{releases/m6-balanced/certify_base_psd_flint.py}\par
+Exact full-matrix ranks and characteristic-polynomial PSD certificates at
+upper \(n=7\) and lower \(n=8\).
+\item \path{releases/m6-balanced/BASE_PSD_RECEIPT.md}\par
+Pinned dependency, commands, dimensions, ranks, denominators, coefficient
+sign summaries, and characteristic-polynomial hashes.
+\end{itemize}
+
+\subsection*{Cross-release validation}
+\begin{itemize}
+\item \path{scripts/check_semantic_bridge.py}\par
+Concrete-word, permutation-action, representation-span, counting-degree, and
+full-Gram validation independent of the stored compressed blocks.
+\item \path{tests/semantic_negative_controls.py}\par
+Ordinary and optimized-Python rejection of four known-bad semantic fixtures.
+\item \path{tests/negative_controls.py}\par
+Mutation controls for identities, determinants, seeds, and endpoints.
+\item \path{scripts/replay_all.py}\par
+Canonical manifest, safety, semantic, exact-replay, and negative-control gate.
+\end{itemize}
+
+\begin{thebibliography}{99}
+
+\bibitem{AlaifariEtAl2020}
+R.~Alaifari, X.~Cheng, L.~B. Pierce, and S.~Steinerberger.
+On matrix rearrangement inequalities.
+\emph{Proceedings of the American Mathematical Society},
+148(5):1835--1848, 2020.
+\url{https://doi.org/10.1090/proc/14831}
+
+\bibitem{AlbarJungeZhao2017}
+W.~Albar, M.~Junge, and M.~Zhao.
+Noncommutative versions of the arithmetic--geometric mean inequality.
+\emph{arXiv preprint arXiv:1703.00546}, 2017.
+\url{https://arxiv.org/abs/1703.00546}
+
+\bibitem{AlbarJungeZhao2018}
+W.~Albar, M.~Junge, and M.~Zhao.
+On the symmetrized arithmetic--geometric mean inequality for operators.
+\emph{arXiv preprint arXiv:1803.02435}, 2018.
+\url{https://arxiv.org/abs/1803.02435}
+
+\bibitem{BhatiaKittaneh2008}
+R.~Bhatia and F.~Kittaneh.
+The matrix arithmetic--geometric mean inequality revisited.
+\emph{Linear Algebra and its Applications}, 428(8--9):2177--2191, 2008.
+\url{https://doi.org/10.1016/j.laa.2007.11.030}
+
+\bibitem{DeSa2020}
+C.~M. De Sa.
+Random reshuffling is not always better.
+In \emph{Advances in Neural Information Processing Systems 33}, 2020.
+\url{https://proceedings.neurips.cc/paper/2020/hash/42299f06ee419aa5d9d07798b56779e2-Abstract.html}
+
+\bibitem{Duchi2012}
+J.~C. Duchi.
+Commentary on ``Toward a noncommutative arithmetic--geometric mean
+inequality: conjectures, case-studies, and consequences.''
+In \emph{Proceedings of the 25th Annual Conference on Learning Theory},
+PMLR 23:11.25--11.27, 2012.
+\url{https://proceedings.mlr.press/v23/duchi12/duchi12.pdf}
+
+\bibitem{GatermannParrilo2004}
+K.~Gatermann and P.~A. Parrilo.
+Symmetry groups, semidefinite programs, and sums of squares.
+\emph{Journal of Pure and Applied Algebra}, 192(1--3):95--128, 2004.
+\url{https://doi.org/10.1016/j.jpaa.2003.12.011}
+
+\bibitem{HKM2012}
+J.~W. Helton, I.~Klep, and S.~McCullough.
+The convex Positivstellensatz in a free algebra.
+\emph{Advances in Mathematics}, 231(1):516--534, 2012.
+\url{https://doi.org/10.1016/j.aim.2012.04.028}
+
+\bibitem{IsraelKrahmerWard2016}
+A.~Israel, F.~Krahmer, and R.~Ward.
+An arithmetic--geometric mean inequality for products of three matrices.
+\emph{Linear Algebra and its Applications}, 488:1--12, 2016.
+\url{https://doi.org/10.1016/j.laa.2015.09.013}
+
+\bibitem{LaiLim2020}
+Z.~Lai and L.-H.~Lim.
+Recht--R\'e noncommutative arithmetic--geometric mean conjecture is false.
+In \emph{Proceedings of the 37th International Conference on Machine Learning},
+PMLR 119:5608--5617, 2020.
+\url{https://proceedings.mlr.press/v119/lai20a.html}
+
+\bibitem{Liu2026}
+Z.~Liu.
+Random reshuffling dominates stochastic gradient descent.
+In \emph{Proceedings of the 39th Conference on Learning Theory},
+PMLR 336:4859--4882, 2026.
+\url{https://proceedings.mlr.press/v336/liu26d.html}
+
+\bibitem{Peng2026}
+B.~Peng.
+A resolution of the SS--RS--GD inequalities.
+\emph{arXiv preprint arXiv:2607.22620}, 2026.
+\url{https://arxiv.org/abs/2607.22620}
+
+\bibitem{PeyrlParrilo2008}
+H.~Peyrl and P.~A. Parrilo.
+Computing sum of squares decompositions with rational coefficients.
+\emph{Theoretical Computer Science}, 409(2):269--281, 2008.
+\url{https://doi.org/10.1016/j.tcs.2008.09.025}
+
+\bibitem{RechtRe2012}
+B.~Recht and C.~R\'e.
+Toward a noncommutative arithmetic--geometric mean inequality:
+Conjectures, case-studies, and consequences.
+In \emph{Proceedings of the 25th Annual Conference on Learning Theory},
+PMLR 23:11.1--11.24, 2012.
+\url{https://proceedings.mlr.press/v23/recht12.html}
+
+\bibitem{Zhang2018}
+T.~Zhang.
+A note on the matrix arithmetic--geometric mean inequality.
+\emph{Electronic Journal of Linear Algebra}, 34:283--287, 2018.
+\url{https://doi.org/10.13001/1081-3810.3555}
+
+\bibitem{YunSraJadbabaie2021}
+C.~Yun, S.~Sra, and A.~Jadbabaie.
+Open problem: Can single-shuffle SGD be better than reshuffling SGD and GD?
+In \emph{Proceedings of the 34th Conference on Learning Theory},
+PMLR 134:4653--4658, 2021.
+\url{https://proceedings.mlr.press/v134/open-problem-yun21a.html}
+
+\end{thebibliography}
+\end{document}

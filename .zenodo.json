@@ -1,0 +1,25 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "description": "Anonymous, unrefereed computer-assisted candidate package establishing exact Recht–Ré inequalities through five factors, balanced six-factor families on multiples of seven and eight, and an exact one-epoch bias-mean-square reversal. The bundle includes one paper, exact rational certificates, semantic reconstruction checks, full-matrix FLINT positive-semidefiniteness certificates, manifests, replay receipts, and mutation controls. Deterministic replay is not formal verification, independent external reproduction, expert acceptance, or journal peer review.",
+  "keywords": [
+    "matrix inequalities",
+    "noncommutative sums of squares",
+    "semidefinite programming",
+    "exact arithmetic",
+    "computer-assisted proof",
+    "random reshuffling",
+    "reproducible research",
+    "unrefereed candidate"
+  ],
+  "language": "eng",
+  "license": "cc0-1.0",
+  "publication_date": "2026-07-30",
+  "title": "Exact Low-Length Recht–Ré Inequalities: paper and exact replication package",
+  "upload_type": "software",
+  "version": "1.0.0-candidate"
+}

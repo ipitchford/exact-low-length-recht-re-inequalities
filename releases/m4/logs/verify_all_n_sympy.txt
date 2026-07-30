@@ -1,0 +1,6 @@
+IDENTITIES: 76 upper and 76 lower orbit equations verified exactly.
+BLOCK COEFFICIENTS: exact degree<=4 interpolation and independent n=10 check passed.
+SEED TRANSVERSALS: 23 upper and 30 lower free coordinates reconstruct the exact affine certificates uniquely.
+POSITIVITY n>=5: 51 determinant polynomials and the upper kernel verified exactly.
+n=4: both exact identities and all representation-block positivity tests passed.
+VERIFIED: Recht--Re m=4 holds for every integer n>=4.

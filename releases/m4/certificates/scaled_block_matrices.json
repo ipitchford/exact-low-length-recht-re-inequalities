@@ -1,0 +1,3371 @@
+{
+  "lower_G0": {
+    "block_index": 0,
+    "dimension": 8,
+    "entries": [
+      [
+        {
+          "denominator": "96",
+          "numerator_coefficients": [
+            105960,
+            135982,
+            62693,
+            12362,
+            883
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -1306680,
+            -1676906,
+            -773119,
+            -152446,
+            -10889
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -3321120,
+            -5187664,
+            -3152798,
+            -935087,
+            -135658,
+            -7713
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            922200,
+            1183490,
+            545635,
+            107590,
+            7685
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            3019200,
+            4662920,
+            2797986,
+            818639,
+            117126,
+            6569
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            1716000,
+            2729840,
+            1692438,
+            512387,
+            75858,
+            4397
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            1872000,
+            2961240,
+            1824778,
+            549047,
+            80798,
+            4657
+          ]
+        },
+        {
+          "denominator": "1920",
+          "numerator_coefficients": [
+            25884000,
+            49256400,
+            38438810,
+            15770563,
+            3590437,
+            430133,
+            21177
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -1306680,
+            -1676906,
+            -773119,
+            -152446,
+            -10889
+          ]
+        },
+        {
+          "denominator": "16",
+          "numerator_coefficients": [
+            199800,
+            256410,
+            118215,
+            23310,
+            1665
+          ]
+        },
+        {
+          "denominator": "16",
+          "numerator_coefficients": [
+            414600,
+            654950,
+            403001,
+            121074,
+            17791,
+            1024
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -3687000,
+            -4731650,
+            -2181475,
+            -430150,
+            -30725
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -8928000,
+            -13980600,
+            -8520250,
+            -2534375,
+            -368750,
+            -21025
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -7992000,
+            -12592200,
+            -7726210,
+            -2314415,
+            -339110,
+            -19465
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -5760000,
+            -9281400,
+            -5832730,
+            -1789895,
+            -268430,
+            -15745
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -15552000,
+            -29977800,
+            -23736590,
+            -9894387,
+            -2290613,
+            -279117,
+            -13973
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -3321120,
+            -5187664,
+            -3152798,
+            -935087,
+            -135658,
+            -7713
+          ]
+        },
+        {
+          "denominator": "16",
+          "numerator_coefficients": [
+            414600,
+            654950,
+            403001,
+            121074,
+            17791,
+            1024
+          ]
+        },
+        {
+          "denominator": "80",
+          "numerator_coefficients": [
+            8622000,
+            15342900,
+            11142130,
+            4243756,
+            896769,
+            99896,
+            4589
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -6696000,
+            -10669800,
+            -6626770,
+            -2009855,
+            -298070,
+            -17305
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -31224000,
+            -55685200,
+            -40534080,
+            -15475450,
+            -3277875,
+            -365950,
+            -16845
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -24216000,
+            -43701200,
+            -32232240,
+            -12480738,
+            -2682587,
+            -303958,
+            -14197
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -28128000,
+            -49840000,
+            -36049320,
+            -13685098,
+            -2885427,
+            -321118,
+            -14757
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -76572000,
+            -162695400,
+            -145865660,
+            -71666722,
+            -20875711,
+            -3610769,
+            -343821,
+            -13917
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            922200,
+            1183490,
+            545635,
+            107590,
+            7685
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -3687000,
+            -4731650,
+            -2181475,
+            -430150,
+            -30725
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -6696000,
+            -10669800,
+            -6626770,
+            -2009855,
+            -298070,
+            -17305
+          ]
+        },
+        {
+          "denominator": "64",
+          "numerator_coefficients": [
+            495000,
+            635250,
+            292875,
+            57750,
+            4125
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            2940000,
+            4658000,
+            2875250,
+            866625,
+            127750,
+            7375
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            3120000,
+            4925000,
+            3027950,
+            908925,
+            133450,
+            7675
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            2040000,
+            3323000,
+            2111750,
+            655125,
+            99250,
+            5875
+          ]
+        },
+        {
+          "denominator": "64",
+          "numerator_coefficients": [
+            1680000,
+            3269000,
+            2617350,
+            1104775,
+            259225,
+            32025,
+            1625
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            3019200,
+            4662920,
+            2797986,
+            818639,
+            117126,
+            6569
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -8928000,
+            -13980600,
+            -8520250,
+            -2534375,
+            -368750,
+            -21025
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -31224000,
+            -55685200,
+            -40534080,
+            -15475450,
+            -3277875,
+            -365950,
+            -16845
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            2940000,
+            4658000,
+            2875250,
+            866625,
+            127750,
+            7375
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            15840000,
+            27840000,
+            19940600,
+            7483790,
+            1557585,
+            170890,
+            7735
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            7680000,
+            14140000,
+            10650800,
+            4212250,
+            924125,
+            106750,
+            5075
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            8160000,
+            14732000,
+            10880000,
+            4223250,
+            911125,
+            103750,
+            4875
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            25740000,
+            55233000,
+            50010500,
+            24811330,
+            7296521,
+            1273879,
+            122411,
+            4999
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            1716000,
+            2729840,
+            1692438,
+            512387,
+            75858,
+            4397
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -7992000,
+            -12592200,
+            -7726210,
+            -2314415,
+            -339110,
+            -19465
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -24216000,
+            -43701200,
+            -32232240,
+            -12480738,
+            -2682587,
+            -303958,
+            -14197
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            3120000,
+            4925000,
+            3027950,
+            908925,
+            133450,
+            7675
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            7680000,
+            14140000,
+            10650800,
+            4212250,
+            924125,
+            106750,
+            5075
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            15840000,
+            27912000,
+            20047400,
+            7544870,
+            1574505,
+            173170,
+            7855
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            7980000,
+            14465000,
+            10727300,
+            4180950,
+            905425,
+            103450,
+            4875
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            25740000,
+            55161000,
+            49903700,
+            24750250,
+            7279601,
+            1271599,
+            122291,
+            4999
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            1872000,
+            2961240,
+            1824778,
+            549047,
+            80798,
+            4657
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -5760000,
+            -9281400,
+            -5832730,
+            -1789895,
+            -268430,
+            -15745
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -28128000,
+            -49840000,
+            -36049320,
+            -13685098,
+            -2885427,
+            -321118,
+            -14757
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            2040000,
+            3323000,
+            2111750,
+            655125,
+            99250,
+            5875
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            8160000,
+            14732000,
+            10880000,
+            4223250,
+            911125,
+            103750,
+            4875
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            7980000,
+            14465000,
+            10727300,
+            4180950,
+            905425,
+            103450,
+            4875
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            12060000,
+            21117000,
+            15078500,
+            5648750,
+            1175625,
+            129250,
+            5875
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            28260000,
+            59463000,
+            52803700,
+            25710550,
+            7428825,
+            1276175,
+            120875,
+            4875
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "1920",
+          "numerator_coefficients": [
+            25884000,
+            49256400,
+            38438810,
+            15770563,
+            3590437,
+            430133,
+            21177
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -15552000,
+            -29977800,
+            -23736590,
+            -9894387,
+            -2290613,
+            -279117,
+            -13973
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -76572000,
+            -162695400,
+            -145865660,
+            -71666722,
+            -20875711,
+            -3610769,
+            -343821,
+            -13917
+          ]
+        },
+        {
+          "denominator": "64",
+          "numerator_coefficients": [
+            1680000,
+            3269000,
+            2617350,
+            1104775,
+            259225,
+            32025,
+            1625
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            25740000,
+            55233000,
+            50010500,
+            24811330,
+            7296521,
+            1273879,
+            122411,
+            4999
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            25740000,
+            55161000,
+            49903700,
+            24750250,
+            7279601,
+            1271599,
+            122291,
+            4999
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            28260000,
+            59463000,
+            52803700,
+            25710550,
+            7428825,
+            1276175,
+            120875,
+            4875
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            96300000,
+            230505000,
+            239104500,
+            140562430,
+            51265941,
+            11887310,
+            1712480,
+            140220,
+            4999
+          ]
+        }
+      ]
+    ],
+    "matrix_type": "G",
+    "word_degrees": [
+      0,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "lower_G1": {
+    "block_index": 1,
+    "dimension": 6,
+    "entries": [
+      [
+        {
+          "denominator": "20",
+          "numerator_coefficients": [
+            172750,
+            215375,
+            95370,
+            17831,
+            1198
+          ]
+        },
+        {
+          "denominator": "8",
+          "numerator_coefficients": [
+            -41750,
+            -52825,
+            -23745,
+            -4495,
+            -305
+          ]
+        },
+        {
+          "denominator": "48",
+          "numerator_coefficients": [
+            -187500,
+            -241100,
+            -110115,
+            -21114,
+            -1447
+          ]
+        },
+        {
+          "denominator": "16",
+          "numerator_coefficients": [
+            -136000,
+            -169350,
+            -74895,
+            -13988,
+            -939
+          ]
+        },
+        {
+          "denominator": "48",
+          "numerator_coefficients": [
+            -808500,
+            -1356100,
+            -891945,
+            -286068,
+            -44321,
+            -2646
+          ]
+        },
+        {
+          "denominator": "48",
+          "numerator_coefficients": [
+            87000,
+            143650,
+            90595,
+            27234,
+            3923,
+            218
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "8",
+          "numerator_coefficients": [
+            -41750,
+            -52825,
+            -23745,
+            -4495,
+            -305
+          ]
+        },
+        {
+          "denominator": "6",
+          "numerator_coefficients": [
+            41250,
+            51625,
+            22950,
+            4305,
+            290
+          ]
+        },
+        {
+          "denominator": "2",
+          "numerator_coefficients": [
+            2500,
+            3500,
+            1725,
+            350,
+            25
+          ]
+        },
+        {
+          "denominator": "6",
+          "numerator_coefficients": [
+            22500,
+            29000,
+            13275,
+            2550,
+            175
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            202500,
+            338000,
+            225425,
+            74415,
+            11911,
+            733
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            -375000,
+            -570250,
+            -334225,
+            -94635,
+            -12995,
+            -695
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "48",
+          "numerator_coefficients": [
+            -187500,
+            -241100,
+            -110115,
+            -21114,
+            -1447
+          ]
+        },
+        {
+          "denominator": "2",
+          "numerator_coefficients": [
+            2500,
+            3500,
+            1725,
+            350,
+            25
+          ]
+        },
+        {
+          "denominator": "12",
+          "numerator_coefficients": [
+            82500,
+            102500,
+            45225,
+            8430,
+            565
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            78750,
+            102125,
+            47025,
+            9075,
+            625
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            202500,
+            335000,
+            221225,
+            72345,
+            11491,
+            703
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            375000,
+            564250,
+            327325,
+            91845,
+            12515,
+            665
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "16",
+          "numerator_coefficients": [
+            -136000,
+            -169350,
+            -74895,
+            -13988,
+            -939
+          ]
+        },
+        {
+          "denominator": "6",
+          "numerator_coefficients": [
+            22500,
+            29000,
+            13275,
+            2550,
+            175
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            78750,
+            102125,
+            47025,
+            9075,
+            625
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            243750,
+            300625,
+            131625,
+            24375,
+            1625
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            337500,
+            605000,
+            418375,
+            138675,
+            21925,
+            1325
+          ]
+        },
+        {
+          "denominator": "8",
+          "numerator_coefficients": [
+            -15000,
+            -22250,
+            -12725,
+            -3525,
+            -475,
+            -25
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "48",
+          "numerator_coefficients": [
+            -808500,
+            -1356100,
+            -891945,
+            -286068,
+            -44321,
+            -2646
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            202500,
+            338000,
+            225425,
+            74415,
+            11911,
+            733
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            202500,
+            335000,
+            221225,
+            72345,
+            11491,
+            703
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            337500,
+            605000,
+            418375,
+            138675,
+            21925,
+            1325
+          ]
+        },
+        {
+          "denominator": "12",
+          "numerator_coefficients": [
+            592500,
+            1229500,
+            1031225,
+            451010,
+            109211,
+            13864,
+            718
+          ]
+        },
+        {
+          "denominator": "4",
+          "numerator_coefficients": [
+            0,
+            -2000,
+            -3300,
+            -2080,
+            -625,
+            -90,
+            -5
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "48",
+          "numerator_coefficients": [
+            87000,
+            143650,
+            90595,
+            27234,
+            3923,
+            218
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            -375000,
+            -570250,
+            -334225,
+            -94635,
+            -12995,
+            -695
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            375000,
+            564250,
+            327325,
+            91845,
+            12515,
+            665
+          ]
+        },
+        {
+          "denominator": "8",
+          "numerator_coefficients": [
+            -15000,
+            -22250,
+            -12725,
+            -3525,
+            -475,
+            -25
+          ]
+        },
+        {
+          "denominator": "4",
+          "numerator_coefficients": [
+            0,
+            -2000,
+            -3300,
+            -2080,
+            -625,
+            -90,
+            -5
+          ]
+        },
+        {
+          "denominator": "12",
+          "numerator_coefficients": [
+            1665000,
+            2866750,
+            2005025,
+            732280,
+            147725,
+            15640,
+            680
+          ]
+        }
+      ]
+    ],
+    "matrix_type": "G",
+    "word_degrees": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "lower_G2": {
+    "block_index": 2,
+    "dimension": 1,
+    "entries": [
+      [
+        {
+          "denominator": "6",
+          "numerator_coefficients": [
+            93750,
+            130125,
+            58975,
+            10975,
+            727
+          ]
+        }
+      ]
+    ],
+    "matrix_type": "G",
+    "word_degrees": [
+      2
+    ]
+  },
+  "lower_G3": {
+    "block_index": 3,
+    "dimension": 1,
+    "entries": [
+      [
+        {
+          "denominator": "8",
+          "numerator_coefficients": [
+            41250,
+            45375,
+            17325,
+            2805,
+            165
+          ]
+        }
+      ]
+    ],
+    "matrix_type": "G",
+    "word_degrees": [
+      2
+    ]
+  },
+  "lower_H0": {
+    "block_index": 0,
+    "dimension": 4,
+    "entries": [
+      [
+        {
+          "denominator": "1",
+          "numerator_coefficients": [
+            120,
+            154,
+            71,
+            14,
+            1
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            -472200,
+            -700430,
+            -400583,
+            -110967,
+            -14953,
+            -787
+          ]
+        },
+        {
+          "denominator": "16",
+          "numerator_coefficients": [
+            33000,
+            48950,
+            27995,
+            7755,
+            1045,
+            55
+          ]
+        },
+        {
+          "denominator": "48",
+          "numerator_coefficients": [
+            417000,
+            721750,
+            506835,
+            185543,
+            37457,
+            3963,
+            172
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            -472200,
+            -700430,
+            -400583,
+            -110967,
+            -14953,
+            -787
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            14289000,
+            24053150,
+            16360905,
+            5782282,
+            1124068,
+            114312,
+            4763
+          ]
+        },
+        {
+          "denominator": "64",
+          "numerator_coefficients": [
+            -4935000,
+            -8307250,
+            -5650575,
+            -1997030,
+            -388220,
+            -39480,
+            -1645
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            -53520000,
+            -103757000,
+            -84283150,
+            -37304185,
+            -9740010,
+            -1503140,
+            -127160,
+            -4555
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "16",
+          "numerator_coefficients": [
+            33000,
+            48950,
+            27995,
+            7755,
+            1045,
+            55
+          ]
+        },
+        {
+          "denominator": "64",
+          "numerator_coefficients": [
+            -4935000,
+            -8307250,
+            -5650575,
+            -1997030,
+            -388220,
+            -39480,
+            -1645
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            17625000,
+            29668750,
+            20180625,
+            7132250,
+            1386500,
+            141000,
+            5875
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            55500000,
+            108050000,
+            88166250,
+            39204625,
+            10284250,
+            1594500,
+            135500,
+            4875
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "48",
+          "numerator_coefficients": [
+            417000,
+            721750,
+            506835,
+            185543,
+            37457,
+            3963,
+            172
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            -53520000,
+            -103757000,
+            -84283150,
+            -37304185,
+            -9740010,
+            -1503140,
+            -127160,
+            -4555
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            55500000,
+            108050000,
+            88166250,
+            39204625,
+            10284250,
+            1594500,
+            135500,
+            4875
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            246300000,
+            535325000,
+            500222500,
+            263138750,
+            85398525,
+            17535826,
+            2227624,
+            160216,
+            4999
+          ]
+        }
+      ]
+    ],
+    "matrix_type": "H",
+    "word_degrees": [
+      0,
+      1,
+      2,
+      2
+    ]
+  },
+  "lower_H1": {
+    "block_index": 1,
+    "dimension": 4,
+    "entries": [
+      [
+        {
+          "denominator": "3",
+          "numerator_coefficients": [
+            15150,
+            18685,
+            8181,
+            1515,
+            101
+          ]
+        },
+        {
+          "denominator": "6",
+          "numerator_coefficients": [
+            -39750,
+            -49025,
+            -21465,
+            -3975,
+            -265
+          ]
+        },
+        {
+          "denominator": "12",
+          "numerator_coefficients": [
+            -182250,
+            -293025,
+            -182590,
+            -55080,
+            -8040,
+            -455
+          ]
+        },
+        {
+          "denominator": "1",
+          "numerator_coefficients": [
+            -7500,
+            -10750,
+            -5900,
+            -1560,
+            -200,
+            -10
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "6",
+          "numerator_coefficients": [
+            -39750,
+            -49025,
+            -21465,
+            -3975,
+            -265
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            243750,
+            300625,
+            131625,
+            24375,
+            1625
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            506250,
+            823125,
+            518500,
+            157950,
+            23250,
+            1325
+          ]
+        },
+        {
+          "denominator": "8",
+          "numerator_coefficients": [
+            -18750,
+            -26875,
+            -14750,
+            -3900,
+            -500,
+            -25
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "12",
+          "numerator_coefficients": [
+            -182250,
+            -293025,
+            -182590,
+            -55080,
+            -8040,
+            -455
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            506250,
+            823125,
+            518500,
+            157950,
+            23250,
+            1325
+          ]
+        },
+        {
+          "denominator": "6",
+          "numerator_coefficients": [
+            596250,
+            1075125,
+            794850,
+            309505,
+            67029,
+            7650,
+            359
+          ]
+        },
+        {
+          "denominator": "4",
+          "numerator_coefficients": [
+            0,
+            -3750,
+            -5375,
+            -2950,
+            -780,
+            -100,
+            -5
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "1",
+          "numerator_coefficients": [
+            -7500,
+            -10750,
+            -5900,
+            -1560,
+            -200,
+            -10
+          ]
+        },
+        {
+          "denominator": "8",
+          "numerator_coefficients": [
+            -18750,
+            -26875,
+            -14750,
+            -3900,
+            -500,
+            -25
+          ]
+        },
+        {
+          "denominator": "4",
+          "numerator_coefficients": [
+            0,
+            -3750,
+            -5375,
+            -2950,
+            -780,
+            -100,
+            -5
+          ]
+        },
+        {
+          "denominator": "3",
+          "numerator_coefficients": [
+            637500,
+            1041250,
+            684250,
+            232900,
+            43520,
+            4250,
+            170
+          ]
+        }
+      ]
+    ],
+    "matrix_type": "H",
+    "word_degrees": [
+      1,
+      2,
+      2,
+      2
+    ]
+  },
+  "lower_H2": {
+    "block_index": 2,
+    "dimension": 1,
+    "entries": [
+      [
+        {
+          "denominator": "6",
+          "numerator_coefficients": [
+            93750,
+            130125,
+            58975,
+            10975,
+            727
+          ]
+        }
+      ]
+    ],
+    "matrix_type": "H",
+    "word_degrees": [
+      2
+    ]
+  },
+  "lower_H3": {
+    "block_index": 3,
+    "dimension": 1,
+    "entries": [
+      [
+        {
+          "denominator": "8",
+          "numerator_coefficients": [
+            41250,
+            45375,
+            17325,
+            2805,
+            165
+          ]
+        }
+      ]
+    ],
+    "matrix_type": "H",
+    "word_degrees": [
+      2
+    ]
+  },
+  "scaling": "Mhat = n*D*M*D, D=diag(n^word_degree)",
+  "schema_version": 1,
+  "upper_G0": {
+    "block_index": 0,
+    "dimension": 8,
+    "entries": [
+      [
+        {
+          "denominator": "96",
+          "numerator_coefficients": [
+            112920,
+            144914,
+            66811,
+            13174,
+            941
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -1446600,
+            -1856470,
+            -855905,
+            -168770,
+            -12055
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -3746400,
+            -5846480,
+            -3549490,
+            -1051585,
+            -152390,
+            -8655
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            1048200,
+            1345190,
+            620185,
+            122290,
+            8735
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            3518400,
+            5428600,
+            3253814,
+            950861,
+            135874,
+            7611
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            1934400,
+            3079000,
+            1910054,
+            578621,
+            85714,
+            4971
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            2167200,
+            3424320,
+            2107546,
+            633329,
+            93086,
+            5359
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            6004800,
+            11422440,
+            8908986,
+            3652573,
+            830867,
+            99443,
+            4891
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -1446600,
+            -1856470,
+            -855905,
+            -168770,
+            -12055
+          ]
+        },
+        {
+          "denominator": "1",
+          "numerator_coefficients": [
+            13800,
+            17710,
+            8165,
+            1610,
+            115
+          ]
+        },
+        {
+          "denominator": "32",
+          "numerator_coefficients": [
+            1033800,
+            1621790,
+            990351,
+            295199,
+            43041,
+            2459
+          ]
+        },
+        {
+          "denominator": "128",
+          "numerator_coefficients": [
+            -1353000,
+            -1736350,
+            -800525,
+            -157850,
+            -11275
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -11832000,
+            -18362600,
+            -11079290,
+            -3260835,
+            -469390,
+            -26485
+          ]
+        },
+        {
+          "denominator": "128",
+          "numerator_coefficients": [
+            -3000000,
+            -4720600,
+            -2892270,
+            -865105,
+            -126570,
+            -7255
+          ]
+        },
+        {
+          "denominator": "128",
+          "numerator_coefficients": [
+            -2460000,
+            -3919600,
+            -2434170,
+            -738205,
+            -109470,
+            -6355
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -20088000,
+            -38645400,
+            -30490870,
+            -12643627,
+            -2907573,
+            -351557,
+            -17453
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -3746400,
+            -5846480,
+            -3549490,
+            -1051585,
+            -152390,
+            -8655
+          ]
+        },
+        {
+          "denominator": "32",
+          "numerator_coefficients": [
+            1033800,
+            1621790,
+            990351,
+            295199,
+            43041,
+            2459
+          ]
+        },
+        {
+          "denominator": "16",
+          "numerator_coefficients": [
+            1994400,
+            3564000,
+            2599114,
+            993803,
+            210707,
+            23533,
+            1083
+          ]
+        },
+        {
+          "denominator": "128",
+          "numerator_coefficients": [
+            -3000000,
+            -4720600,
+            -2892270,
+            -865105,
+            -126570,
+            -7255
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -35280000,
+            -63554400,
+            -46738120,
+            -18019498,
+            -3850527,
+            -433118,
+            -20057
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -30192000,
+            -54423200,
+            -40072200,
+            -15480058,
+            -3317167,
+            -374478,
+            -17417
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -34728000,
+            -61734800,
+            -44785320,
+            -17040766,
+            -3597859,
+            -400506,
+            -18389
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -98496000,
+            -207758400,
+            -185091320,
+            -90464606,
+            -26240607,
+            -4523233,
+            -429457,
+            -17337
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            1048200,
+            1345190,
+            620185,
+            122290,
+            8735
+          ]
+        },
+        {
+          "denominator": "128",
+          "numerator_coefficients": [
+            -1353000,
+            -1736350,
+            -800525,
+            -157850,
+            -11275
+          ]
+        },
+        {
+          "denominator": "128",
+          "numerator_coefficients": [
+            -3000000,
+            -4720600,
+            -2892270,
+            -865105,
+            -126570,
+            -7255
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            1605000,
+            2059750,
+            949625,
+            187250,
+            13375
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            4320000,
+            6729000,
+            4076750,
+            1205125,
+            174250,
+            9875
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            3540000,
+            5572000,
+            3415050,
+            1021825,
+            149550,
+            8575
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            2700000,
+            4326000,
+            2702450,
+            824425,
+            122950,
+            7175
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            7380000,
+            14214000,
+            11235150,
+            4670585,
+            1077415,
+            130735,
+            6515
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            3518400,
+            5428600,
+            3253814,
+            950861,
+            135874,
+            7611
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -11832000,
+            -18362600,
+            -11079290,
+            -3260835,
+            -469390,
+            -26485
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -35280000,
+            -63554400,
+            -46738120,
+            -18019498,
+            -3850527,
+            -433118,
+            -20057
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            4320000,
+            6729000,
+            4076750,
+            1205125,
+            174250,
+            9875
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            17160000,
+            30614000,
+            22275600,
+            8492390,
+            1793985,
+            199490,
+            9135
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            10080000,
+            18540000,
+            13937600,
+            5495010,
+            1200365,
+            137910,
+            6515
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            10920000,
+            19786000,
+            14650200,
+            5692410,
+            1226965,
+            139310,
+            6515
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            31320000,
+            67230000,
+            60987000,
+            30355470,
+            8964757,
+            1572443,
+            151787,
+            6223
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            1934400,
+            3079000,
+            1910054,
+            578621,
+            85714,
+            4971
+          ]
+        },
+        {
+          "denominator": "128",
+          "numerator_coefficients": [
+            -3000000,
+            -4720600,
+            -2892270,
+            -865105,
+            -126570,
+            -7255
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -30192000,
+            -54423200,
+            -40072200,
+            -15480058,
+            -3317167,
+            -374478,
+            -17417
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            3540000,
+            5572000,
+            3415050,
+            1021825,
+            149550,
+            8575
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            10080000,
+            18540000,
+            13937600,
+            5495010,
+            1200365,
+            137910,
+            6515
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            17340000,
+            30605000,
+            22018900,
+            8300550,
+            1734825,
+            191050,
+            8675
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            11700000,
+            20943000,
+            15311900,
+            5875710,
+            1251665,
+            140610,
+            6515
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            31140000,
+            67239000,
+            61243700,
+            30547310,
+            9023917,
+            1580883,
+            152247,
+            6223
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            2167200,
+            3424320,
+            2107546,
+            633329,
+            93086,
+            5359
+          ]
+        },
+        {
+          "denominator": "128",
+          "numerator_coefficients": [
+            -2460000,
+            -3919600,
+            -2434170,
+            -738205,
+            -109470,
+            -6355
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -34728000,
+            -61734800,
+            -44785320,
+            -17040766,
+            -3597859,
+            -400506,
+            -18389
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            2700000,
+            4326000,
+            2702450,
+            824425,
+            122950,
+            7175
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            10920000,
+            19786000,
+            14650200,
+            5692410,
+            1226965,
+            139310,
+            6515
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            11700000,
+            20943000,
+            15311900,
+            5875710,
+            1251665,
+            140610,
+            6515
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            14520000,
+            25522000,
+            18291600,
+            6874350,
+            1434025,
+            157850,
+            7175
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            38340000,
+            80571000,
+            71460700,
+            34748970,
+            10023765,
+            1718035,
+            162215,
+            6515
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            6004800,
+            11422440,
+            8908986,
+            3652573,
+            830867,
+            99443,
+            4891
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -20088000,
+            -38645400,
+            -30490870,
+            -12643627,
+            -2907573,
+            -351557,
+            -17453
+          ]
+        },
+        {
+          "denominator": "384",
+          "numerator_coefficients": [
+            -98496000,
+            -207758400,
+            -185091320,
+            -90464606,
+            -26240607,
+            -4523233,
+            -429457,
+            -17337
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            7380000,
+            14214000,
+            11235150,
+            4670585,
+            1077415,
+            130735,
+            6515
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            31320000,
+            67230000,
+            60987000,
+            30355470,
+            8964757,
+            1572443,
+            151787,
+            6223
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            31140000,
+            67239000,
+            61243700,
+            30547310,
+            9023917,
+            1580883,
+            152247,
+            6223
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            38340000,
+            80571000,
+            71460700,
+            34748970,
+            10023765,
+            1718035,
+            162215,
+            6515
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            113220000,
+            273243000,
+            285753900,
+            169326030,
+            62231517,
+            14535310,
+            2108120,
+            173660,
+            6223
+          ]
+        }
+      ]
+    ],
+    "kernel_in_scaled_coordinates": [
+      "n^2",
+      "n",
+      "n",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "matrix_type": "G",
+    "word_degrees": [
+      0,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "upper_G1": {
+    "block_index": 1,
+    "dimension": 6,
+    "entries": [
+      [
+        {
+          "denominator": "2",
+          "numerator_coefficients": [
+            17200,
+            21230,
+            9303,
+            1724,
+            115
+          ]
+        },
+        {
+          "denominator": "6",
+          "numerator_coefficients": [
+            -33000,
+            -40150,
+            -17325,
+            -3168,
+            -209
+          ]
+        },
+        {
+          "denominator": "48",
+          "numerator_coefficients": [
+            -237000,
+            -296650,
+            -131895,
+            -24744,
+            -1667
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            -194250,
+            -241175,
+            -106335,
+            -19809,
+            -1327
+          ]
+        },
+        {
+          "denominator": "48",
+          "numerator_coefficients": [
+            -642000,
+            -1174200,
+            -819790,
+            -272031,
+            -42876,
+            -2579
+          ]
+        },
+        {
+          "denominator": "48",
+          "numerator_coefficients": [
+            -222000,
+            -320300,
+            -177980,
+            -47985,
+            -6310,
+            -325
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "6",
+          "numerator_coefficients": [
+            -33000,
+            -40150,
+            -17325,
+            -3168,
+            -209
+          ]
+        },
+        {
+          "denominator": "4",
+          "numerator_coefficients": [
+            31250,
+            37375,
+            15825,
+            2845,
+            185
+          ]
+        },
+        {
+          "denominator": "1",
+          "numerator_coefficients": [
+            1250,
+            1625,
+            750,
+            145,
+            10
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            67500,
+            86500,
+            39375,
+            7530,
+            515
+          ]
+        },
+        {
+          "denominator": "12",
+          "numerator_coefficients": [
+            97500,
+            168750,
+            113450,
+            36825,
+            5736,
+            343
+          ]
+        },
+        {
+          "denominator": "2",
+          "numerator_coefficients": [
+            -25000,
+            -37750,
+            -21975,
+            -6185,
+            -845,
+            -45
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "48",
+          "numerator_coefficients": [
+            -237000,
+            -296650,
+            -131895,
+            -24744,
+            -1667
+          ]
+        },
+        {
+          "denominator": "1",
+          "numerator_coefficients": [
+            1250,
+            1625,
+            750,
+            145,
+            10
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            183750,
+            226625,
+            99225,
+            18375,
+            1225
+          ]
+        },
+        {
+          "denominator": "8",
+          "numerator_coefficients": [
+            38750,
+            48875,
+            21900,
+            4135,
+            280
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            187500,
+            338500,
+            237825,
+            80535,
+            13007,
+            801
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            285000,
+            458750,
+            283175,
+            83715,
+            11905,
+            655
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            -194250,
+            -241175,
+            -106335,
+            -19809,
+            -1327
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            67500,
+            86500,
+            39375,
+            7530,
+            515
+          ]
+        },
+        {
+          "denominator": "8",
+          "numerator_coefficients": [
+            38750,
+            48875,
+            21900,
+            4135,
+            280
+          ]
+        },
+        {
+          "denominator": "12",
+          "numerator_coefficients": [
+            116250,
+            143375,
+            62775,
+            11625,
+            775
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            367500,
+            650000,
+            443275,
+            144945,
+            22645,
+            1355
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            195000,
+            289250,
+            165425,
+            45825,
+            6175,
+            325
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "48",
+          "numerator_coefficients": [
+            -642000,
+            -1174200,
+            -819790,
+            -272031,
+            -42876,
+            -2579
+          ]
+        },
+        {
+          "denominator": "12",
+          "numerator_coefficients": [
+            97500,
+            168750,
+            113450,
+            36825,
+            5736,
+            343
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            187500,
+            338500,
+            237825,
+            80535,
+            13007,
+            801
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            367500,
+            650000,
+            443275,
+            144945,
+            22645,
+            1355
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            1245000,
+            2547500,
+            2129950,
+            933895,
+            226699,
+            28781,
+            1487
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            -30000,
+            -3500,
+            44700,
+            38465,
+            13025,
+            1995,
+            115
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "48",
+          "numerator_coefficients": [
+            -222000,
+            -320300,
+            -177980,
+            -47985,
+            -6310,
+            -325
+          ]
+        },
+        {
+          "denominator": "2",
+          "numerator_coefficients": [
+            -25000,
+            -37750,
+            -21975,
+            -6185,
+            -845,
+            -45
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            285000,
+            458750,
+            283175,
+            83715,
+            11905,
+            655
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            195000,
+            289250,
+            165425,
+            45825,
+            6175,
+            325
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            -30000,
+            -3500,
+            44700,
+            38465,
+            13025,
+            1995,
+            115
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            3000000,
+            5123000,
+            3557950,
+            1292795,
+            259975,
+            27485,
+            1195
+          ]
+        }
+      ]
+    ],
+    "matrix_type": "G",
+    "word_degrees": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "upper_G2": {
+    "block_index": 2,
+    "dimension": 1,
+    "entries": [
+      [
+        {
+          "denominator": "3",
+          "numerator_coefficients": [
+            60000,
+            71625,
+            29750,
+            5225,
+            332
+          ]
+        }
+      ]
+    ],
+    "matrix_type": "G",
+    "word_degrees": [
+      2
+    ]
+  },
+  "upper_G3": {
+    "block_index": 3,
+    "dimension": 1,
+    "entries": [
+      [
+        {
+          "denominator": "4",
+          "numerator_coefficients": [
+            41250,
+            45375,
+            17325,
+            2805,
+            165
+          ]
+        }
+      ]
+    ],
+    "matrix_type": "G",
+    "word_degrees": [
+      2
+    ]
+  },
+  "upper_H0": {
+    "block_index": 0,
+    "dimension": 4,
+    "entries": [
+      [
+        {
+          "denominator": "1",
+          "numerator_coefficients": [
+            120,
+            154,
+            71,
+            14,
+            1
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            -507000,
+            -752050,
+            -430105,
+            -119145,
+            -16055,
+            -845
+          ]
+        },
+        {
+          "denominator": "16",
+          "numerator_coefficients": [
+            39000,
+            57850,
+            33085,
+            9165,
+            1235,
+            65
+          ]
+        },
+        {
+          "denominator": "16",
+          "numerator_coefficients": [
+            150000,
+            260300,
+            183320,
+            67317,
+            13633,
+            1447,
+            63
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            -507000,
+            -752050,
+            -430105,
+            -119145,
+            -16055,
+            -845
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            16359000,
+            27537650,
+            18731055,
+            6619942,
+            1286908,
+            130872,
+            5453
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            -17835000,
+            -30022250,
+            -20421075,
+            -7217230,
+            -1403020,
+            -142680,
+            -5945
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            -64080000,
+            -124251000,
+            -100949650,
+            -44689575,
+            -11670614,
+            -1801436,
+            -152424,
+            -5461
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "16",
+          "numerator_coefficients": [
+            39000,
+            57850,
+            33085,
+            9165,
+            1235,
+            65
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            -17835000,
+            -30022250,
+            -20421075,
+            -7217230,
+            -1403020,
+            -142680,
+            -5945
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            21525000,
+            36233750,
+            24646125,
+            8710450,
+            1693300,
+            172200,
+            7175
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            76200000,
+            147815000,
+            120149750,
+            53214625,
+            13903610,
+            2147140,
+            181760,
+            6515
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "16",
+          "numerator_coefficients": [
+            150000,
+            260300,
+            183320,
+            67317,
+            13633,
+            1447,
+            63
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            -64080000,
+            -124251000,
+            -100949650,
+            -44689575,
+            -11670614,
+            -1801436,
+            -152424,
+            -5461
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            76200000,
+            147815000,
+            120149750,
+            53214625,
+            13903610,
+            2147140,
+            181760,
+            6515
+          ]
+        },
+        {
+          "denominator": "192",
+          "numerator_coefficients": [
+            292800000,
+            640480000,
+            602385000,
+            318914550,
+            104138405,
+            21508322,
+            2747028,
+            198552,
+            6223
+          ]
+        }
+      ]
+    ],
+    "matrix_type": "H",
+    "word_degrees": [
+      0,
+      1,
+      2,
+      2
+    ]
+  },
+  "upper_H1": {
+    "block_index": 1,
+    "dimension": 4,
+    "entries": [
+      [
+        {
+          "denominator": "12",
+          "numerator_coefficients": [
+            62850,
+            77515,
+            33939,
+            6285,
+            419
+          ]
+        },
+        {
+          "denominator": "12",
+          "numerator_coefficients": [
+            -80250,
+            -98975,
+            -43335,
+            -8025,
+            -535
+          ]
+        },
+        {
+          "denominator": "6",
+          "numerator_coefficients": [
+            -105750,
+            -167625,
+            -102985,
+            -30663,
+            -4425,
+            -248
+          ]
+        },
+        {
+          "denominator": "12",
+          "numerator_coefficients": [
+            -161250,
+            -231125,
+            -126850,
+            -33540,
+            -4300,
+            -215
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "12",
+          "numerator_coefficients": [
+            -80250,
+            -98975,
+            -43335,
+            -8025,
+            -535
+          ]
+        },
+        {
+          "denominator": "12",
+          "numerator_coefficients": [
+            116250,
+            143375,
+            62775,
+            11625,
+            775
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            551250,
+            883125,
+            548350,
+            164880,
+            24000,
+            1355
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            243750,
+            349375,
+            191750,
+            50700,
+            6500,
+            325
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "6",
+          "numerator_coefficients": [
+            -105750,
+            -167625,
+            -102985,
+            -30663,
+            -4425,
+            -248
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            551250,
+            883125,
+            548350,
+            164880,
+            24000,
+            1355
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            2441250,
+            4428375,
+            3289575,
+            1284670,
+            278472,
+            31755,
+            1487
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            -56250,
+            5625,
+            79375,
+            56150,
+            16440,
+            2225,
+            115
+          ]
+        }
+      ],
+      [
+        {
+          "denominator": "12",
+          "numerator_coefficients": [
+            -161250,
+            -231125,
+            -126850,
+            -33540,
+            -4300,
+            -215
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            243750,
+            349375,
+            191750,
+            50700,
+            6500,
+            325
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            -56250,
+            5625,
+            79375,
+            56150,
+            16440,
+            2225,
+            115
+          ]
+        },
+        {
+          "denominator": "24",
+          "numerator_coefficients": [
+            4481250,
+            7319375,
+            4809875,
+            1637150,
+            305920,
+            29875,
+            1195
+          ]
+        }
+      ]
+    ],
+    "matrix_type": "H",
+    "word_degrees": [
+      1,
+      2,
+      2,
+      2
+    ]
+  },
+  "upper_H2": {
+    "block_index": 2,
+    "dimension": 1,
+    "entries": [
+      [
+        {
+          "denominator": "3",
+          "numerator_coefficients": [
+            60000,
+            71625,
+            29750,
+            5225,
+            332
+          ]
+        }
+      ]
+    ],
+    "matrix_type": "H",
+    "word_degrees": [
+      2
+    ]
+  },
+  "upper_H3": {
+    "block_index": 3,
+    "dimension": 1,
+    "entries": [
+      [
+        {
+          "denominator": "4",
+          "numerator_coefficients": [
+            41250,
+            45375,
+            17325,
+            2805,
+            165
+          ]
+        }
+      ]
+    ],
+    "matrix_type": "H",
+    "word_degrees": [
+      2
+    ]
+  },
+  "variable": "t=n-5"
+}

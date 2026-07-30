@@ -1,0 +1,2658 @@
+{
+  "basis": "words of length at most two",
+  "lower": {
+    "free_functions": {
+      "15": {
+        "denominator_constant": 5000,
+        "denominator_n_power": 2,
+        "expression": "(n - 4)*(n - 3)*(n - 2)*(59077*n - 32037)/(5000*n**2)",
+        "numerator_coefficients": [
+          768888,
+          -2250810,
+          1824335,
+          -563730,
+          59077
+        ]
+      },
+      "16": {
+        "denominator_constant": 20000,
+        "denominator_n_power": 2,
+        "expression": "(n - 4)*(n - 3)*(49893*n**2 - 372214*n + 256296)/(20000*n**2)",
+        "numerator_coefficients": [
+          3075552,
+          -6260640,
+          3460510,
+          -721465,
+          49893
+        ]
+      },
+      "17": {
+        "denominator_constant": 5000,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(1951*n - 4536)/(5000*n**3)",
+        "numerator_coefficients": [
+          -326592,
+          494280,
+          -274650,
+          66285,
+          -5853
+        ]
+      },
+      "21": {
+        "denominator_constant": 5000,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(6401*n - 4536)/(5000*n**3)",
+        "numerator_coefficients": [
+          -326592,
+          814680,
+          -621750,
+          186435,
+          -19203
+        ]
+      },
+      "23": {
+        "denominator_constant": 20000,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(12059*n**2 - 97922*n + 36288)/(20000*n**3)",
+        "numerator_coefficients": [
+          -1306368,
+          4287240,
+          -2599350,
+          547005,
+          -36177
+        ]
+      },
+      "25": {
+        "denominator_constant": 20000,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(769*n**2 - 34662*n + 36288)/(20000*n**3)",
+        "numerator_coefficients": [
+          -1306368,
+          2009880,
+          -864450,
+          120135,
+          -2307
+        ]
+      },
+      "6": {
+        "denominator_constant": 40000,
+        "denominator_n_power": 2,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(1643*n + 1442)/(40000*n**2)",
+        "numerator_coefficients": [
+          103824,
+          5820,
+          -89220,
+          40035,
+          -4929
+        ]
+      },
+      "60": {
+        "denominator_constant": 20000,
+        "denominator_n_power": 1,
+        "expression": "-12691*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(20000*n)",
+        "numerator_coefficients": [
+          -304584,
+          634550,
+          -444185,
+          126910,
+          -12691
+        ]
+      },
+      "61": {
+        "denominator_constant": 10000,
+        "denominator_n_power": 2,
+        "expression": "-5067*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(10000*n**2)",
+        "numerator_coefficients": [
+          -121608,
+          253350,
+          -177345,
+          50670,
+          -5067
+        ]
+      },
+      "62": {
+        "denominator_constant": 20000,
+        "denominator_n_power": 2,
+        "expression": "-9*(n - 4)*(n - 3)*(n - 2)*(51*n - 1126)/(20000*n**2)",
+        "numerator_coefficients": [
+          -243216,
+          274500,
+          -103140,
+          14265,
+          -459
+        ]
+      },
+      "63": {
+        "denominator_constant": 10000,
+        "denominator_n_power": 2,
+        "expression": "54987*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(10000*n**2)",
+        "numerator_coefficients": [
+          1319688,
+          -2749350,
+          1924545,
+          -549870,
+          54987
+        ]
+      },
+      "64": {
+        "denominator_constant": 20000,
+        "denominator_n_power": 2,
+        "expression": "3*(n - 4)*(n - 3)*(n - 2)*(13113*n - 36658)/(20000*n**2)",
+        "numerator_coefficients": [
+          2639376,
+          -3803460,
+          2012580,
+          -464025,
+          39339
+        ]
+      },
+      "65": {
+        "denominator_constant": 2500,
+        "denominator_n_power": 3,
+        "expression": "-2673*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(2500*n**3)",
+        "numerator_coefficients": [
+          -64152,
+          133650,
+          -93555,
+          26730,
+          -2673
+        ]
+      },
+      "66": {
+        "denominator_constant": 2500,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(1756*n - 891)/(2500*n**3)",
+        "numerator_coefficients": [
+          -64152,
+          195930,
+          -161025,
+          50085,
+          -5268
+        ]
+      },
+      "67": {
+        "denominator_constant": 10000,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(8249*n - 3564)/(10000*n**3)",
+        "numerator_coefficients": [
+          -256608,
+          871920,
+          -739650,
+          233415,
+          -24747
+        ]
+      },
+      "68": {
+        "denominator_constant": 10000,
+        "denominator_n_power": 3,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(247*n + 1188)/(10000*n**3)",
+        "numerator_coefficients": [
+          -256608,
+          224640,
+          -38430,
+          -9315,
+          2223
+        ]
+      },
+      "69": {
+        "denominator_constant": 5000,
+        "denominator_n_power": 3,
+        "expression": "-(n - 4)*(n - 3)*(n**2 - 21798*n + 10692)/(5000*n**3)",
+        "numerator_coefficients": [
+          -128304,
+          336420,
+          -163290,
+          21805,
+          -1
+        ]
+      },
+      "70": {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "4131*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -206550,
+          144585,
+          -41310,
+          4131
+        ]
+      },
+      "71": {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "243*(n - 4)*(n - 3)*(n - 2)*(12*n - 17)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -177390,
+          112995,
+          -30375,
+          2916
+        ]
+      },
+      "72": {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(314*n - 459)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -175230,
+          110655,
+          -29565,
+          2826
+        ]
+      },
+      "73": {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "27*(n - 4)*(n - 3)*(n - 2)*(38*n - 153)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -132030,
+          63855,
+          -13365,
+          1026
+        ]
+      },
+      "74": {
+        "denominator_constant": 625,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(2*n**2 - 376*n + 459)/(625*n**4)",
+        "numerator_coefficients": [
+          49572,
+          -69525,
+          28035,
+          -3510,
+          18
+        ]
+      },
+      "75": {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "27*(n - 4)*(n - 3)*(n - 2)*(893*n - 153)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -686070,
+          664065,
+          -221130,
+          24111
+        ]
+      },
+      "76": {
+        "denominator_constant": 2500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(3989*n**2 - 19962*n + 5508)/(2500*n**4)",
+        "numerator_coefficients": [
+          198288,
+          -834300,
+          579330,
+          -143655,
+          11967
+        ]
+      },
+      "77": {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(2624*n - 459)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -674190,
+          651195,
+          -216675,
+          23616
+        ]
+      },
+      "78": {
+        "denominator_constant": 625,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(971*n**2 - 4893*n + 1377)/(625*n**4)",
+        "numerator_coefficients": [
+          49572,
+          -205065,
+          141840,
+          -35070,
+          2913
+        ]
+      },
+      "79": {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(679*n**2 - 3307*n + 918)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -414990,
+          289935,
+          -72540,
+          6111
+        ]
+      },
+      "8": {
+        "denominator_constant": 5000,
+        "denominator_n_power": 2,
+        "expression": "32037*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(5000*n**2)",
+        "numerator_coefficients": [
+          768888,
+          -1601850,
+          1121295,
+          -320370,
+          32037
+        ]
+      },
+      "80": {
+        "denominator_constant": 2500,
+        "denominator_n_power": 4,
+        "expression": "(n - 4)*(7*n**3 - 47637*n**2 + 143442*n - 49572)/(2500*n**4)",
+        "numerator_coefficients": [
+          198288,
+          -623340,
+          333990,
+          -47665,
+          7
+        ]
+      },
+      "9": {
+        "denominator_constant": 20000,
+        "denominator_n_power": 2,
+        "expression": "3*(n - 4)*(n - 3)*(n - 2)*(22651*n - 42716)/(20000*n**2)",
+        "numerator_coefficients": [
+          3075552,
+          -4962720,
+          2920110,
+          -739725,
+          67953
+        ]
+      }
+    },
+    "free_indices": [
+      6,
+      8,
+      9,
+      15,
+      16,
+      17,
+      21,
+      23,
+      25,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "orbit_functions": [
+      {
+        "denominator_constant": 10000,
+        "denominator_n_power": 0,
+        "expression": "22691*(n - 4)*(n - 3)*(n - 2)*(n - 1)/10000",
+        "numerator_coefficients": [
+          544584,
+          -1134550,
+          794185,
+          -226910,
+          22691
+        ]
+      },
+      {
+        "denominator_constant": 2500,
+        "denominator_n_power": 1,
+        "expression": "-7193*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(2500*n)",
+        "numerator_coefficients": [
+          -172632,
+          359650,
+          -251755,
+          71930,
+          -7193
+        ]
+      },
+      {
+        "denominator_constant": 40000,
+        "denominator_n_power": 1,
+        "expression": "-(n - 4)*(n - 3)*(n - 2)*(63803*n - 115088)/(40000*n)",
+        "numerator_coefficients": [
+          -2762112,
+          4523560,
+          -2694670,
+          689315,
+          -63803
+        ]
+      },
+      {
+        "denominator_constant": 20000,
+        "denominator_n_power": 2,
+        "expression": "2163*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(20000*n**2)",
+        "numerator_coefficients": [
+          51912,
+          -108150,
+          75705,
+          -21630,
+          2163
+        ]
+      },
+      {
+        "denominator_constant": 40000,
+        "denominator_n_power": 2,
+        "expression": "21*(n - 4)*(n - 3)*(n - 2)*(91*n - 206)/(40000*n**2)",
+        "numerator_coefficients": [
+          103824,
+          -158340,
+          88620,
+          -21525,
+          1911
+        ]
+      },
+      {
+        "denominator_constant": 20000,
+        "denominator_n_power": 2,
+        "expression": "-(n - 4)*(n - 3)*(n - 2)*(14132*n + 2163)/(20000*n**2)",
+        "numerator_coefficients": [
+          51912,
+          282930,
+          -347965,
+          125025,
+          -14132
+        ]
+      },
+      {
+        "denominator_constant": 40000,
+        "denominator_n_power": 2,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(1643*n + 1442)/(40000*n**2)",
+        "numerator_coefficients": [
+          103824,
+          5820,
+          -89220,
+          40035,
+          -4929
+        ]
+      },
+      {
+        "denominator_constant": 20000,
+        "denominator_n_power": 2,
+        "expression": "-(n - 4)*(n - 3)*(5732*n**2 - 15641*n - 4326)/(20000*n**2)",
+        "numerator_coefficients": [
+          51912,
+          157410,
+          -173945,
+          55765,
+          -5732
+        ]
+      },
+      {
+        "denominator_constant": 5000,
+        "denominator_n_power": 2,
+        "expression": "32037*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(5000*n**2)",
+        "numerator_coefficients": [
+          768888,
+          -1601850,
+          1121295,
+          -320370,
+          32037
+        ]
+      },
+      {
+        "denominator_constant": 20000,
+        "denominator_n_power": 2,
+        "expression": "3*(n - 4)*(n - 3)*(n - 2)*(22651*n - 42716)/(20000*n**2)",
+        "numerator_coefficients": [
+          3075552,
+          -4962720,
+          2920110,
+          -739725,
+          67953
+        ]
+      },
+      {
+        "denominator_constant": 625,
+        "denominator_n_power": 3,
+        "expression": "-1701*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(625*n**3)",
+        "numerator_coefficients": [
+          -40824,
+          85050,
+          -59535,
+          17010,
+          -1701
+        ]
+      },
+      {
+        "denominator_constant": 10000,
+        "denominator_n_power": 3,
+        "expression": "-21*(n - 4)*(n - 3)*(n - 2)*(1451*n - 1296)/(10000*n**3)",
+        "numerator_coefficients": [
+          -653184,
+          1438920,
+          -1037190,
+          301455,
+          -30471
+        ]
+      },
+      {
+        "denominator_constant": 10000,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(6547*n - 9072)/(10000*n**3)",
+        "numerator_coefficients": [
+          -653184,
+          1179000,
+          -755610,
+          203985,
+          -19641
+        ]
+      },
+      {
+        "denominator_constant": 10000,
+        "denominator_n_power": 3,
+        "expression": "-9*(n - 4)*(n - 3)*(n - 2)*(209*n - 3024)/(10000*n**3)",
+        "numerator_coefficients": [
+          -653184,
+          752760,
+          -293850,
+          44145,
+          -1881
+        ]
+      },
+      {
+        "denominator_constant": 20000,
+        "denominator_n_power": 3,
+        "expression": "(n - 4)*(n - 3)*(6173*n**2 + 103986*n - 108864)/(20000*n**3)",
+        "numerator_coefficients": [
+          -1306368,
+          2009880,
+          -762690,
+          60775,
+          6173
+        ]
+      },
+      {
+        "denominator_constant": 5000,
+        "denominator_n_power": 2,
+        "expression": "(n - 4)*(n - 3)*(n - 2)*(59077*n - 32037)/(5000*n**2)",
+        "numerator_coefficients": [
+          768888,
+          -2250810,
+          1824335,
+          -563730,
+          59077
+        ]
+      },
+      {
+        "denominator_constant": 20000,
+        "denominator_n_power": 2,
+        "expression": "(n - 4)*(n - 3)*(49893*n**2 - 372214*n + 256296)/(20000*n**2)",
+        "numerator_coefficients": [
+          3075552,
+          -6260640,
+          3460510,
+          -721465,
+          49893
+        ]
+      },
+      {
+        "denominator_constant": 5000,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(1951*n - 4536)/(5000*n**3)",
+        "numerator_coefficients": [
+          -326592,
+          494280,
+          -274650,
+          66285,
+          -5853
+        ]
+      },
+      {
+        "denominator_constant": 10000,
+        "denominator_n_power": 3,
+        "expression": "-21*(n - 4)*(n - 3)*(n - 2)*(5771*n - 1296)/(10000*n**3)",
+        "numerator_coefficients": [
+          -653184,
+          3616200,
+          -3395910,
+          1117935,
+          -121191
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 3,
+        "expression": "-(n - 4)*(n - 3)*(2992*n**2 - 20421*n + 6804)/(1250*n**3)",
+        "numerator_coefficients": [
+          -81648,
+          292680,
+          -185655,
+          41365,
+          -2992
+        ]
+      },
+      {
+        "denominator_constant": 625,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(2407*n - 567)/(625*n**3)",
+        "numerator_coefficients": [
+          -40824,
+          217530,
+          -203055,
+          66690,
+          -7221
+        ]
+      },
+      {
+        "denominator_constant": 5000,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(6401*n - 4536)/(5000*n**3)",
+        "numerator_coefficients": [
+          -326592,
+          814680,
+          -621750,
+          186435,
+          -19203
+        ]
+      },
+      {
+        "denominator_constant": 20000,
+        "denominator_n_power": 3,
+        "expression": "-(n - 4)*(n - 3)*(99187*n**2 - 368826*n + 108864)/(20000*n**3)",
+        "numerator_coefficients": [
+          -1306368,
+          5187960,
+          -3880890,
+          1063135,
+          -99187
+        ]
+      },
+      {
+        "denominator_constant": 20000,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(12059*n**2 - 97922*n + 36288)/(20000*n**3)",
+        "numerator_coefficients": [
+          -1306368,
+          4287240,
+          -2599350,
+          547005,
+          -36177
+        ]
+      },
+      {
+        "denominator_constant": 10000,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(16397*n**2 - 59746*n + 18144)/(10000*n**3)",
+        "numerator_coefficients": [
+          -653184,
+          2531880,
+          -1899390,
+          523575,
+          -49191
+        ]
+      },
+      {
+        "denominator_constant": 20000,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(769*n**2 - 34662*n + 36288)/(20000*n**3)",
+        "numerator_coefficients": [
+          -1306368,
+          2009880,
+          -864450,
+          120135,
+          -2307
+        ]
+      },
+      {
+        "denominator_constant": 2500,
+        "denominator_n_power": 3,
+        "expression": "-(n - 4)*(4*n**3 - 34719*n**2 + 109764*n - 40824)/(2500*n**3)",
+        "numerator_coefficients": [
+          -163296,
+          479880,
+          -248640,
+          34735,
+          -4
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "4131*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -206550,
+          144585,
+          -41310,
+          4131
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "243*(n - 4)*(n - 3)*(n - 2)*(12*n - 17)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -177390,
+          112995,
+          -30375,
+          2916
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(314*n - 459)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -175230,
+          110655,
+          -29565,
+          2826
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "27*(n - 4)*(n - 3)*(n - 2)*(38*n - 153)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -132030,
+          63855,
+          -13365,
+          1026
+        ]
+      },
+      {
+        "denominator_constant": 625,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(2*n**2 - 376*n + 459)/(625*n**4)",
+        "numerator_coefficients": [
+          49572,
+          -69525,
+          28035,
+          -3510,
+          18
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "27*(n - 4)*(n - 3)*(n - 2)*(893*n - 153)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -686070,
+          664065,
+          -221130,
+          24111
+        ]
+      },
+      {
+        "denominator_constant": 2500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(3989*n**2 - 19962*n + 5508)/(2500*n**4)",
+        "numerator_coefficients": [
+          198288,
+          -834300,
+          579330,
+          -143655,
+          11967
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(2624*n - 459)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -674190,
+          651195,
+          -216675,
+          23616
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(314*n - 459)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -175230,
+          110655,
+          -29565,
+          2826
+        ]
+      },
+      {
+        "denominator_constant": 625,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(971*n**2 - 4893*n + 1377)/(625*n**4)",
+        "numerator_coefficients": [
+          49572,
+          -205065,
+          141840,
+          -35070,
+          2913
+        ]
+      },
+      {
+        "denominator_constant": 625,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(971*n**2 - 4893*n + 1377)/(625*n**4)",
+        "numerator_coefficients": [
+          49572,
+          -205065,
+          141840,
+          -35070,
+          2913
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(679*n**2 - 3307*n + 918)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -414990,
+          289935,
+          -72540,
+          6111
+        ]
+      },
+      {
+        "denominator_constant": 625,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(2*n**2 - 376*n + 459)/(625*n**4)",
+        "numerator_coefficients": [
+          49572,
+          -69525,
+          28035,
+          -3510,
+          18
+        ]
+      },
+      {
+        "denominator_constant": 2500,
+        "denominator_n_power": 4,
+        "expression": "(n - 4)*(7*n**3 - 47637*n**2 + 143442*n - 49572)/(2500*n**4)",
+        "numerator_coefficients": [
+          198288,
+          -623340,
+          333990,
+          -47665,
+          7
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "27*(n - 4)*(n - 3)*(n - 2)*(893*n - 153)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -686070,
+          664065,
+          -221130,
+          24111
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "243*(n - 4)*(n - 3)*(n - 2)*(12*n - 17)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -177390,
+          112995,
+          -30375,
+          2916
+        ]
+      },
+      {
+        "denominator_constant": 2500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(3989*n**2 - 19962*n + 5508)/(2500*n**4)",
+        "numerator_coefficients": [
+          198288,
+          -834300,
+          579330,
+          -143655,
+          11967
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(679*n**2 - 3307*n + 918)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -414990,
+          289935,
+          -72540,
+          6111
+        ]
+      },
+      {
+        "denominator_constant": 625,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(971*n**2 - 4893*n + 1377)/(625*n**4)",
+        "numerator_coefficients": [
+          49572,
+          -205065,
+          141840,
+          -35070,
+          2913
+        ]
+      },
+      {
+        "denominator_constant": 625,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(2*n**2 - 376*n + 459)/(625*n**4)",
+        "numerator_coefficients": [
+          49572,
+          -69525,
+          28035,
+          -3510,
+          18
+        ]
+      },
+      {
+        "denominator_constant": 2500,
+        "denominator_n_power": 4,
+        "expression": "(n - 4)*(7*n**3 - 47637*n**2 + 143442*n - 49572)/(2500*n**4)",
+        "numerator_coefficients": [
+          198288,
+          -623340,
+          333990,
+          -47665,
+          7
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "4131*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -206550,
+          144585,
+          -41310,
+          4131
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "243*(n - 4)*(n - 3)*(n - 2)*(12*n - 17)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -177390,
+          112995,
+          -30375,
+          2916
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(314*n - 459)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -175230,
+          110655,
+          -29565,
+          2826
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "27*(n - 4)*(n - 3)*(n - 2)*(38*n - 153)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -132030,
+          63855,
+          -13365,
+          1026
+        ]
+      },
+      {
+        "denominator_constant": 625,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(2*n**2 - 376*n + 459)/(625*n**4)",
+        "numerator_coefficients": [
+          49572,
+          -69525,
+          28035,
+          -3510,
+          18
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "27*(n - 4)*(n - 3)*(n - 2)*(893*n - 153)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -686070,
+          664065,
+          -221130,
+          24111
+        ]
+      },
+      {
+        "denominator_constant": 2500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(3989*n**2 - 19962*n + 5508)/(2500*n**4)",
+        "numerator_coefficients": [
+          198288,
+          -834300,
+          579330,
+          -143655,
+          11967
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(2624*n - 459)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -674190,
+          651195,
+          -216675,
+          23616
+        ]
+      },
+      {
+        "denominator_constant": 625,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(971*n**2 - 4893*n + 1377)/(625*n**4)",
+        "numerator_coefficients": [
+          49572,
+          -205065,
+          141840,
+          -35070,
+          2913
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(679*n**2 - 3307*n + 918)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -414990,
+          289935,
+          -72540,
+          6111
+        ]
+      },
+      {
+        "denominator_constant": 2500,
+        "denominator_n_power": 4,
+        "expression": "(2507*n**4 - 47665*n**3 + 333990*n**2 - 623340*n + 198288)/(2500*n**4)",
+        "numerator_coefficients": [
+          198288,
+          -623340,
+          333990,
+          -47665,
+          2507
+        ]
+      },
+      {
+        "denominator_constant": 1,
+        "denominator_n_power": 0,
+        "expression": "(n - 4)*(n - 3)*(n - 2)*(n - 1)",
+        "numerator_coefficients": [
+          24,
+          -50,
+          35,
+          -10,
+          1
+        ]
+      },
+      {
+        "denominator_constant": 20000,
+        "denominator_n_power": 1,
+        "expression": "-12691*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(20000*n)",
+        "numerator_coefficients": [
+          -304584,
+          634550,
+          -444185,
+          126910,
+          -12691
+        ]
+      },
+      {
+        "denominator_constant": 10000,
+        "denominator_n_power": 2,
+        "expression": "-5067*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(10000*n**2)",
+        "numerator_coefficients": [
+          -121608,
+          253350,
+          -177345,
+          50670,
+          -5067
+        ]
+      },
+      {
+        "denominator_constant": 20000,
+        "denominator_n_power": 2,
+        "expression": "-9*(n - 4)*(n - 3)*(n - 2)*(51*n - 1126)/(20000*n**2)",
+        "numerator_coefficients": [
+          -243216,
+          274500,
+          -103140,
+          14265,
+          -459
+        ]
+      },
+      {
+        "denominator_constant": 10000,
+        "denominator_n_power": 2,
+        "expression": "54987*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(10000*n**2)",
+        "numerator_coefficients": [
+          1319688,
+          -2749350,
+          1924545,
+          -549870,
+          54987
+        ]
+      },
+      {
+        "denominator_constant": 20000,
+        "denominator_n_power": 2,
+        "expression": "3*(n - 4)*(n - 3)*(n - 2)*(13113*n - 36658)/(20000*n**2)",
+        "numerator_coefficients": [
+          2639376,
+          -3803460,
+          2012580,
+          -464025,
+          39339
+        ]
+      },
+      {
+        "denominator_constant": 2500,
+        "denominator_n_power": 3,
+        "expression": "-2673*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(2500*n**3)",
+        "numerator_coefficients": [
+          -64152,
+          133650,
+          -93555,
+          26730,
+          -2673
+        ]
+      },
+      {
+        "denominator_constant": 2500,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(1756*n - 891)/(2500*n**3)",
+        "numerator_coefficients": [
+          -64152,
+          195930,
+          -161025,
+          50085,
+          -5268
+        ]
+      },
+      {
+        "denominator_constant": 10000,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(8249*n - 3564)/(10000*n**3)",
+        "numerator_coefficients": [
+          -256608,
+          871920,
+          -739650,
+          233415,
+          -24747
+        ]
+      },
+      {
+        "denominator_constant": 10000,
+        "denominator_n_power": 3,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(247*n + 1188)/(10000*n**3)",
+        "numerator_coefficients": [
+          -256608,
+          224640,
+          -38430,
+          -9315,
+          2223
+        ]
+      },
+      {
+        "denominator_constant": 5000,
+        "denominator_n_power": 3,
+        "expression": "-(n - 4)*(n - 3)*(n**2 - 21798*n + 10692)/(5000*n**3)",
+        "numerator_coefficients": [
+          -128304,
+          336420,
+          -163290,
+          21805,
+          -1
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "4131*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -206550,
+          144585,
+          -41310,
+          4131
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "243*(n - 4)*(n - 3)*(n - 2)*(12*n - 17)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -177390,
+          112995,
+          -30375,
+          2916
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(314*n - 459)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -175230,
+          110655,
+          -29565,
+          2826
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "27*(n - 4)*(n - 3)*(n - 2)*(38*n - 153)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -132030,
+          63855,
+          -13365,
+          1026
+        ]
+      },
+      {
+        "denominator_constant": 625,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(2*n**2 - 376*n + 459)/(625*n**4)",
+        "numerator_coefficients": [
+          49572,
+          -69525,
+          28035,
+          -3510,
+          18
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "27*(n - 4)*(n - 3)*(n - 2)*(893*n - 153)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -686070,
+          664065,
+          -221130,
+          24111
+        ]
+      },
+      {
+        "denominator_constant": 2500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(3989*n**2 - 19962*n + 5508)/(2500*n**4)",
+        "numerator_coefficients": [
+          198288,
+          -834300,
+          579330,
+          -143655,
+          11967
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(2624*n - 459)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -674190,
+          651195,
+          -216675,
+          23616
+        ]
+      },
+      {
+        "denominator_constant": 625,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(971*n**2 - 4893*n + 1377)/(625*n**4)",
+        "numerator_coefficients": [
+          49572,
+          -205065,
+          141840,
+          -35070,
+          2913
+        ]
+      },
+      {
+        "denominator_constant": 1250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(679*n**2 - 3307*n + 918)/(1250*n**4)",
+        "numerator_coefficients": [
+          99144,
+          -414990,
+          289935,
+          -72540,
+          6111
+        ]
+      },
+      {
+        "denominator_constant": 2500,
+        "denominator_n_power": 4,
+        "expression": "(n - 4)*(7*n**3 - 47637*n**2 + 143442*n - 49572)/(2500*n**4)",
+        "numerator_coefficients": [
+          198288,
+          -623340,
+          333990,
+          -47665,
+          7
+        ]
+      }
+    ]
+  },
+  "n_min": 6,
+  "orbit_counts": {
+    "G_stabilizer": 59,
+    "H_full": 22
+  },
+  "schema_version": 1,
+  "upper": {
+    "free_functions": {
+      "17": {
+        "denominator_constant": 500,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(292*n - 627)/(500*n**3)",
+        "numerator_coefficients": [
+          -45144,
+          69930,
+          -39705,
+          9765,
+          -876
+        ]
+      },
+      "21": {
+        "denominator_constant": 500,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(602*n - 627)/(500*n**3)",
+        "numerator_coefficients": [
+          -45144,
+          92250,
+          -63885,
+          18135,
+          -1806
+        ]
+      },
+      "23": {
+        "denominator_constant": 2000,
+        "denominator_n_power": 3,
+        "expression": "-9*(n - 4)*(n - 3)*(661*n**2 - 3178*n + 1672)/(2000*n**3)",
+        "numerator_coefficients": [
+          -180576,
+          448560,
+          -286650,
+          70245,
+          -5949
+        ]
+      },
+      "25": {
+        "denominator_constant": 500,
+        "denominator_n_power": 3,
+        "expression": "-(n - 4)*(n - 3)*(271*n**2 - 2853*n + 3762)/(500*n**3)",
+        "numerator_coefficients": [
+          -45144,
+          60570,
+          -26985,
+          4750,
+          -271
+        ]
+      },
+      "61": {
+        "denominator_constant": 50,
+        "denominator_n_power": 2,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(50*n**2)",
+        "numerator_coefficients": [
+          -72,
+          150,
+          -105,
+          30,
+          -3
+        ]
+      },
+      "62": {
+        "denominator_constant": 400,
+        "denominator_n_power": 2,
+        "expression": "(n - 4)*(n - 3)*(n - 2)*(169*n + 24)/(400*n**2)",
+        "numerator_coefficients": [
+          -576,
+          -3432,
+          4178,
+          -1497,
+          169
+        ]
+      },
+      "64": {
+        "denominator_constant": 2000,
+        "denominator_n_power": 2,
+        "expression": "3*(n - 4)*(n - 3)*(n - 2)*(199*n - 2974)/(2000*n**2)",
+        "numerator_coefficients": [
+          214128,
+          -246300,
+          95820,
+          -14295,
+          597
+        ]
+      },
+      "65": {
+        "denominator_constant": 50,
+        "denominator_n_power": 3,
+        "expression": "-99*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(50*n**3)",
+        "numerator_coefficients": [
+          -2376,
+          4950,
+          -3465,
+          990,
+          -99
+        ]
+      },
+      "66": {
+        "denominator_constant": 200,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(113*n - 132)/(200*n**3)",
+        "numerator_coefficients": [
+          -9504,
+          18432,
+          -12378,
+          3447,
+          -339
+        ]
+      },
+      "67": {
+        "denominator_constant": 200,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(107*n - 132)/(200*n**3)",
+        "numerator_coefficients": [
+          -9504,
+          18000,
+          -11910,
+          3285,
+          -321
+        ]
+      },
+      "68": {
+        "denominator_constant": 100,
+        "denominator_n_power": 3,
+        "expression": "-9*(n - 22)*(n - 4)*(n - 3)*(n - 2)/(100*n**3)",
+        "numerator_coefficients": [
+          -4752,
+          5364,
+          -2016,
+          279,
+          -9
+        ]
+      },
+      "69": {
+        "denominator_constant": 200,
+        "denominator_n_power": 3,
+        "expression": "-(n - 4)*(n - 3)*(7*n**2 - 678*n + 792)/(200*n**3)",
+        "numerator_coefficients": [
+          -9504,
+          13680,
+          -5622,
+          727,
+          -7
+        ]
+      },
+      "70": {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "891*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -44550,
+          31185,
+          -8910,
+          891
+        ]
+      },
+      "71": {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(59*n - 99)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -35910,
+          21825,
+          -5670,
+          531
+        ]
+      },
+      "72": {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "99*(n - 4)*(n - 3)*(n - 2)*(13*n - 18)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -77220,
+          49500,
+          -13365,
+          1287
+        ]
+      },
+      "73": {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(14*n - 99)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -26190,
+          11295,
+          -2025,
+          126
+        ]
+      },
+      "74": {
+        "denominator_constant": 1000,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(61*n**2 - 578*n + 792)/(1000*n**4)",
+        "numerator_coefficients": [
+          85536,
+          -112320,
+          50130,
+          -9045,
+          549
+        ]
+      },
+      "75": {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(499*n - 99)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -130950,
+          124785,
+          -41310,
+          4491
+        ]
+      },
+      "76": {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(502*n**2 - 1851*n + 594)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -79110,
+          58725,
+          -16095,
+          1506
+        ]
+      },
+      "77": {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(923*n - 198)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -245700,
+          232020,
+          -76545,
+          8307
+        ]
+      },
+      "78": {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(929*n**2 - 3552*n + 1188)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -152820,
+          111600,
+          -30165,
+          2787
+        ]
+      },
+      "79": {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(1069*n**2 - 3852*n + 1188)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -163620,
+          122940,
+          -34005,
+          3207
+        ]
+      },
+      "80": {
+        "denominator_constant": 2000,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(1911*n**3 - 16456*n**2 + 35916*n - 14256)/(2000*n**4)",
+        "numerator_coefficients": [
+          171072,
+          -473760,
+          305220,
+          -72300,
+          5733
+        ]
+      }
+    },
+    "free_indices": [
+      17,
+      21,
+      23,
+      25,
+      61,
+      62,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "orbit_functions": [
+      {
+        "denominator_constant": 50,
+        "denominator_n_power": 0,
+        "expression": "47*(n - 4)*(n - 3)*(n - 2)*(n - 1)/50",
+        "numerator_coefficients": [
+          1128,
+          -2350,
+          1645,
+          -470,
+          47
+        ]
+      },
+      {
+        "denominator_constant": 2000,
+        "denominator_n_power": 1,
+        "expression": "-4281*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(2000*n)",
+        "numerator_coefficients": [
+          -102744,
+          214050,
+          -149835,
+          42810,
+          -4281
+        ]
+      },
+      {
+        "denominator_constant": 4000,
+        "denominator_n_power": 1,
+        "expression": "-(n - 4)*(n - 3)*(n - 2)*(2167*n - 8562)/(4000*n)",
+        "numerator_coefficients": [
+          -205488,
+          274620,
+          -133400,
+          28065,
+          -2167
+        ]
+      },
+      {
+        "denominator_constant": 1000,
+        "denominator_n_power": 2,
+        "expression": "1203*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(1000*n**2)",
+        "numerator_coefficients": [
+          28872,
+          -60150,
+          42105,
+          -12030,
+          1203
+        ]
+      },
+      {
+        "denominator_constant": 2000,
+        "denominator_n_power": 2,
+        "expression": "(n - 4)*(n - 3)*(n - 2)*(361*n - 2406)/(2000*n**2)",
+        "numerator_coefficients": [
+          57744,
+          -71220,
+          31040,
+          -5655,
+          361
+        ]
+      },
+      {
+        "denominator_constant": 1000,
+        "denominator_n_power": 2,
+        "expression": "3*(n - 4)*(n - 3)*(n - 2)*(36*n - 401)/(1000*n**2)",
+        "numerator_coefficients": [
+          28872,
+          -33870,
+          13635,
+          -2175,
+          108
+        ]
+      },
+      {
+        "denominator_constant": 1000,
+        "denominator_n_power": 2,
+        "expression": "-(n - 4)*(n - 3)*(n - 2)*(7*n + 1203)/(1000*n**2)",
+        "numerator_coefficients": [
+          28872,
+          -31110,
+          10645,
+          -1140,
+          -7
+        ]
+      },
+      {
+        "denominator_constant": 4000,
+        "denominator_n_power": 2,
+        "expression": "-(n - 4)*(n - 3)*(1593*n**2 + 1126*n - 9624)/(4000*n**2)",
+        "numerator_coefficients": [
+          115488,
+          -80880,
+          -1610,
+          10025,
+          -1593
+        ]
+      },
+      {
+        "denominator_constant": 200,
+        "denominator_n_power": 2,
+        "expression": "1179*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(200*n**2)",
+        "numerator_coefficients": [
+          28296,
+          -58950,
+          41265,
+          -11790,
+          1179
+        ]
+      },
+      {
+        "denominator_constant": 400,
+        "denominator_n_power": 2,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(101*n - 262)/(400*n**2)",
+        "numerator_coefficients": [
+          56592,
+          -83124,
+          44856,
+          -10539,
+          909
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 3,
+        "expression": "-1881*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(500*n**3)",
+        "numerator_coefficients": [
+          -45144,
+          94050,
+          -65835,
+          18810,
+          -1881
+        ]
+      },
+      {
+        "denominator_constant": 1000,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(719*n - 1254)/(1000*n**3)",
+        "numerator_coefficients": [
+          -90288,
+          149580,
+          -89940,
+          23175,
+          -2157
+        ]
+      },
+      {
+        "denominator_constant": 1000,
+        "denominator_n_power": 3,
+        "expression": "-9*(n - 4)*(n - 3)*(n - 2)*(283*n - 418)/(1000*n**3)",
+        "numerator_coefficients": [
+          -90288,
+          158940,
+          -100080,
+          26685,
+          -2547
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 3,
+        "expression": "-171*(n - 11)*(n - 4)*(n - 3)*(n - 2)/(500*n**3)",
+        "numerator_coefficients": [
+          -45144,
+          53010,
+          -21375,
+          3420,
+          -171
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(22*n**2 - 841*n + 1254)/(500*n**3)",
+        "numerator_coefficients": [
+          -45144,
+          56610,
+          -22215,
+          2985,
+          -66
+        ]
+      },
+      {
+        "denominator_constant": 200,
+        "denominator_n_power": 2,
+        "expression": "(n - 4)*(n - 3)*(n - 2)*(1660*n - 1179)/(200*n**2)",
+        "numerator_coefficients": [
+          28296,
+          -70494,
+          53771,
+          -16119,
+          1660
+        ]
+      },
+      {
+        "denominator_constant": 200,
+        "denominator_n_power": 2,
+        "expression": "(n - 4)*(n - 3)*(402*n**2 - 2569*n + 2358)/(200*n**2)",
+        "numerator_coefficients": [
+          28296,
+          -47334,
+          25165,
+          -5383,
+          402
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(292*n - 627)/(500*n**3)",
+        "numerator_coefficients": [
+          -45144,
+          69930,
+          -39705,
+          9765,
+          -876
+        ]
+      },
+      {
+        "denominator_constant": 1000,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(3529*n - 1254)/(1000*n**3)",
+        "numerator_coefficients": [
+          -90288,
+          351900,
+          -309120,
+          99045,
+          -10587
+        ]
+      },
+      {
+        "denominator_constant": 1000,
+        "denominator_n_power": 3,
+        "expression": "-(n - 4)*(n - 3)*(3047*n**2 - 14496*n + 7524)/(1000*n**3)",
+        "numerator_coefficients": [
+          -90288,
+          226620,
+          -145560,
+          35825,
+          -3047
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(1667*n - 627)/(500*n**3)",
+        "numerator_coefficients": [
+          -45144,
+          168930,
+          -146955,
+          46890,
+          -5001
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(602*n - 627)/(500*n**3)",
+        "numerator_coefficients": [
+          -45144,
+          92250,
+          -63885,
+          18135,
+          -1806
+        ]
+      },
+      {
+        "denominator_constant": 2000,
+        "denominator_n_power": 3,
+        "expression": "-(n - 4)*(n - 3)*(8659*n**2 - 31542*n + 15048)/(2000*n**3)",
+        "numerator_coefficients": [
+          -180576,
+          483840,
+          -339750,
+          92155,
+          -8659
+        ]
+      },
+      {
+        "denominator_constant": 2000,
+        "denominator_n_power": 3,
+        "expression": "-9*(n - 4)*(n - 3)*(661*n**2 - 3178*n + 1672)/(2000*n**3)",
+        "numerator_coefficients": [
+          -180576,
+          448560,
+          -286650,
+          70245,
+          -5949
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(802*n**2 - 2791*n + 1254)/(500*n**3)",
+        "numerator_coefficients": [
+          -45144,
+          126810,
+          -91245,
+          25215,
+          -2406
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 3,
+        "expression": "-(n - 4)*(n - 3)*(271*n**2 - 2853*n + 3762)/(500*n**3)",
+        "numerator_coefficients": [
+          -45144,
+          60570,
+          -26985,
+          4750,
+          -271
+        ]
+      },
+      {
+        "denominator_constant": 4000,
+        "denominator_n_power": 3,
+        "expression": "-(n - 4)*(5873*n**3 - 63348*n**2 + 164268*n - 90288)/(4000*n**3)",
+        "numerator_coefficients": [
+          -361152,
+          747360,
+          -417660,
+          86840,
+          -5873
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "891*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -44550,
+          31185,
+          -8910,
+          891
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(59*n - 99)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -35910,
+          21825,
+          -5670,
+          531
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "99*(n - 4)*(n - 3)*(n - 2)*(13*n - 18)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -77220,
+          49500,
+          -13365,
+          1287
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(14*n - 99)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -26190,
+          11295,
+          -2025,
+          126
+        ]
+      },
+      {
+        "denominator_constant": 1000,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(61*n**2 - 578*n + 792)/(1000*n**4)",
+        "numerator_coefficients": [
+          85536,
+          -112320,
+          50130,
+          -9045,
+          549
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(499*n - 99)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -130950,
+          124785,
+          -41310,
+          4491
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(502*n**2 - 1851*n + 594)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -79110,
+          58725,
+          -16095,
+          1506
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(923*n - 198)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -245700,
+          232020,
+          -76545,
+          8307
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "99*(n - 4)*(n - 3)*(n - 2)*(13*n - 18)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -77220,
+          49500,
+          -13365,
+          1287
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(929*n**2 - 3552*n + 1188)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -152820,
+          111600,
+          -30165,
+          2787
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(929*n**2 - 3552*n + 1188)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -152820,
+          111600,
+          -30165,
+          2787
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(1069*n**2 - 3852*n + 1188)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -163620,
+          122940,
+          -34005,
+          3207
+        ]
+      },
+      {
+        "denominator_constant": 1000,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(61*n**2 - 578*n + 792)/(1000*n**4)",
+        "numerator_coefficients": [
+          85536,
+          -112320,
+          50130,
+          -9045,
+          549
+        ]
+      },
+      {
+        "denominator_constant": 2000,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(1911*n**3 - 16456*n**2 + 35916*n - 14256)/(2000*n**4)",
+        "numerator_coefficients": [
+          171072,
+          -473760,
+          305220,
+          -72300,
+          5733
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(499*n - 99)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -130950,
+          124785,
+          -41310,
+          4491
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(59*n - 99)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -35910,
+          21825,
+          -5670,
+          531
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(502*n**2 - 1851*n + 594)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -79110,
+          58725,
+          -16095,
+          1506
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(1069*n**2 - 3852*n + 1188)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -163620,
+          122940,
+          -34005,
+          3207
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(929*n**2 - 3552*n + 1188)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -152820,
+          111600,
+          -30165,
+          2787
+        ]
+      },
+      {
+        "denominator_constant": 1000,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(61*n**2 - 578*n + 792)/(1000*n**4)",
+        "numerator_coefficients": [
+          85536,
+          -112320,
+          50130,
+          -9045,
+          549
+        ]
+      },
+      {
+        "denominator_constant": 2000,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(1911*n**3 - 16456*n**2 + 35916*n - 14256)/(2000*n**4)",
+        "numerator_coefficients": [
+          171072,
+          -473760,
+          305220,
+          -72300,
+          5733
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "891*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -44550,
+          31185,
+          -8910,
+          891
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(59*n - 99)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -35910,
+          21825,
+          -5670,
+          531
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "99*(n - 4)*(n - 3)*(n - 2)*(13*n - 18)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -77220,
+          49500,
+          -13365,
+          1287
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(14*n - 99)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -26190,
+          11295,
+          -2025,
+          126
+        ]
+      },
+      {
+        "denominator_constant": 1000,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(61*n**2 - 578*n + 792)/(1000*n**4)",
+        "numerator_coefficients": [
+          85536,
+          -112320,
+          50130,
+          -9045,
+          549
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(499*n - 99)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -130950,
+          124785,
+          -41310,
+          4491
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(502*n**2 - 1851*n + 594)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -79110,
+          58725,
+          -16095,
+          1506
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(923*n - 198)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -245700,
+          232020,
+          -76545,
+          8307
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(929*n**2 - 3552*n + 1188)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -152820,
+          111600,
+          -30165,
+          2787
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(1069*n**2 - 3852*n + 1188)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -163620,
+          122940,
+          -34005,
+          3207
+        ]
+      },
+      {
+        "denominator_constant": 2000,
+        "denominator_n_power": 4,
+        "expression": "(3733*n**4 - 72300*n**3 + 305220*n**2 - 473760*n + 171072)/(2000*n**4)",
+        "numerator_coefficients": [
+          171072,
+          -473760,
+          305220,
+          -72300,
+          3733
+        ]
+      },
+      {
+        "denominator_constant": 1,
+        "denominator_n_power": 0,
+        "expression": "(n - 4)*(n - 3)*(n - 2)*(n - 1)",
+        "numerator_coefficients": [
+          24,
+          -50,
+          35,
+          -10,
+          1
+        ]
+      },
+      {
+        "denominator_constant": 100,
+        "denominator_n_power": 1,
+        "expression": "3*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(100*n)",
+        "numerator_coefficients": [
+          72,
+          -150,
+          105,
+          -30,
+          3
+        ]
+      },
+      {
+        "denominator_constant": 50,
+        "denominator_n_power": 2,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(50*n**2)",
+        "numerator_coefficients": [
+          -72,
+          150,
+          -105,
+          30,
+          -3
+        ]
+      },
+      {
+        "denominator_constant": 400,
+        "denominator_n_power": 2,
+        "expression": "(n - 4)*(n - 3)*(n - 2)*(169*n + 24)/(400*n**2)",
+        "numerator_coefficients": [
+          -576,
+          -3432,
+          4178,
+          -1497,
+          169
+        ]
+      },
+      {
+        "denominator_constant": 1000,
+        "denominator_n_power": 2,
+        "expression": "4461*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(1000*n**2)",
+        "numerator_coefficients": [
+          107064,
+          -223050,
+          156135,
+          -44610,
+          4461
+        ]
+      },
+      {
+        "denominator_constant": 2000,
+        "denominator_n_power": 2,
+        "expression": "3*(n - 4)*(n - 3)*(n - 2)*(199*n - 2974)/(2000*n**2)",
+        "numerator_coefficients": [
+          214128,
+          -246300,
+          95820,
+          -14295,
+          597
+        ]
+      },
+      {
+        "denominator_constant": 50,
+        "denominator_n_power": 3,
+        "expression": "-99*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(50*n**3)",
+        "numerator_coefficients": [
+          -2376,
+          4950,
+          -3465,
+          990,
+          -99
+        ]
+      },
+      {
+        "denominator_constant": 200,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(113*n - 132)/(200*n**3)",
+        "numerator_coefficients": [
+          -9504,
+          18432,
+          -12378,
+          3447,
+          -339
+        ]
+      },
+      {
+        "denominator_constant": 200,
+        "denominator_n_power": 3,
+        "expression": "-3*(n - 4)*(n - 3)*(n - 2)*(107*n - 132)/(200*n**3)",
+        "numerator_coefficients": [
+          -9504,
+          18000,
+          -11910,
+          3285,
+          -321
+        ]
+      },
+      {
+        "denominator_constant": 100,
+        "denominator_n_power": 3,
+        "expression": "-9*(n - 22)*(n - 4)*(n - 3)*(n - 2)/(100*n**3)",
+        "numerator_coefficients": [
+          -4752,
+          5364,
+          -2016,
+          279,
+          -9
+        ]
+      },
+      {
+        "denominator_constant": 200,
+        "denominator_n_power": 3,
+        "expression": "-(n - 4)*(n - 3)*(7*n**2 - 678*n + 792)/(200*n**3)",
+        "numerator_coefficients": [
+          -9504,
+          13680,
+          -5622,
+          727,
+          -7
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "891*(n - 4)*(n - 3)*(n - 2)*(n - 1)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -44550,
+          31185,
+          -8910,
+          891
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(59*n - 99)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -35910,
+          21825,
+          -5670,
+          531
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "99*(n - 4)*(n - 3)*(n - 2)*(13*n - 18)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -77220,
+          49500,
+          -13365,
+          1287
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(14*n - 99)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -26190,
+          11295,
+          -2025,
+          126
+        ]
+      },
+      {
+        "denominator_constant": 1000,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(61*n**2 - 578*n + 792)/(1000*n**4)",
+        "numerator_coefficients": [
+          85536,
+          -112320,
+          50130,
+          -9045,
+          549
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(499*n - 99)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -130950,
+          124785,
+          -41310,
+          4491
+        ]
+      },
+      {
+        "denominator_constant": 250,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(502*n**2 - 1851*n + 594)/(250*n**4)",
+        "numerator_coefficients": [
+          21384,
+          -79110,
+          58725,
+          -16095,
+          1506
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "9*(n - 4)*(n - 3)*(n - 2)*(923*n - 198)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -245700,
+          232020,
+          -76545,
+          8307
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(929*n**2 - 3552*n + 1188)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -152820,
+          111600,
+          -30165,
+          2787
+        ]
+      },
+      {
+        "denominator_constant": 500,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(n - 3)*(1069*n**2 - 3852*n + 1188)/(500*n**4)",
+        "numerator_coefficients": [
+          42768,
+          -163620,
+          122940,
+          -34005,
+          3207
+        ]
+      },
+      {
+        "denominator_constant": 2000,
+        "denominator_n_power": 4,
+        "expression": "3*(n - 4)*(1911*n**3 - 16456*n**2 + 35916*n - 14256)/(2000*n**4)",
+        "numerator_coefficients": [
+          171072,
+          -473760,
+          305220,
+          -72300,
+          5733
+        ]
+      }
+    ]
+  }
+}

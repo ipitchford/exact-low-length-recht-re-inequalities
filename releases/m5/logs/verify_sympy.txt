@@ -1,0 +1,7 @@
+IDENTITIES: 76 upper and 76 lower orbit equations verified exactly.
+BLOCK COEFFICIENTS: exact degree<=4 interpolation and independent n=11 check passed.
+SEED TRANSVERSALS: 23 upper and 30 lower free coordinates reconstruct the exact affine certificates uniquely.
+POSITIVITY n>=6: 51 determinant polynomials and the upper kernel verified exactly.
+n=5 UPPER ENDPOINT: exact identity, kernel, and rational Sylvester tests passed.
+SEED: parametric family specializes exactly to both n=6 certificates.
+VERIFIED: Recht--Re m=5 upper bound holds for n>=5 and both bounds hold for n>=6.
