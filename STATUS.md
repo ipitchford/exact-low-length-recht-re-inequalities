@@ -7,6 +7,7 @@ peer review remain requirements for journal submission or acceptance.
 **Evidence date:** 30 July 2026.
 **Version:** `1.0.0-candidate`.
 **Exact version DOI:** `10.5281/zenodo.21709239`.
+**All-versions concept DOI:** `10.5281/zenodo.21709238`.
 
 ## Confirmed
 
@@ -31,9 +32,16 @@ peer review remain requirements for journal submission or acceptance.
   in the package.
 - The scoped CC0-1.0 dedication covers original rights held by the repository
   maintainer and expressly excludes third-party material and dependencies.
-- The version DOI is reserved for the exact tagged archive; the public
+- The version DOI is registered for the exact tagged archive; the public
   release certificate binds the tag, archive, paper, replay transcript, and
   internal manifest hashes.
+- The public GitHub release is immutable and its signed release and asset
+  attestations verify. An unauthenticated clone has one parentless Anonymous
+  commit at the release tag.
+- All six Zenodo files were downloaded without authentication, matched the
+  local and GitHub SHA-256 values byte for byte, and passed the strict
+  certificate verifier against a fresh extraction. See
+  `PUBLICATION_READBACK.json`.
 
 ## Claims deliberately not made
 

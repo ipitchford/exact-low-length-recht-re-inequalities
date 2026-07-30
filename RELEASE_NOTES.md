@@ -7,7 +7,7 @@ Release date: 30 July 2026.
 ## Scope
 
 This is the first unified anonymous candidate release of *Exact Low-Length
-Recht--Re Inequalities*. It contains exactly one manuscript and consolidates
+Recht–Ré Inequalities*. It contains exactly one manuscript and consolidates
 the four- and five-factor exact results, a general balanced-seed continuation
 theorem, new six-factor balanced families, and the exact one-epoch
 bias--mean-square reversal.
@@ -28,9 +28,11 @@ bias--mean-square reversal.
 The release carries six files: the exact tagged-tree ZIP, anonymous PDF,
 complete replay transcript, outer machine-readable release certificate,
 certificate SHA-256 sidecar, and `SHA256SUMS.txt`. GitHub and the manually
-created Zenodo record at exact version DOI `10.5281/zenodo.21709239` are
-intended to carry byte-identical copies; the public readback receipt on `main`
-records the post-publication verification.
+created Zenodo record at exact version DOI `10.5281/zenodo.21709239` carry
+byte-identical copies. The all-versions concept DOI is
+`10.5281/zenodo.21709238`; `PUBLICATION_READBACK.json` on `main` records the
+post-publication identifiers, timestamps, hashes, attestations, and
+unauthenticated verification.
 
 ## Assurance boundary
 

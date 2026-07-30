@@ -2,7 +2,7 @@
   "archival_record": {
     "archive_file": "exact-low-length-recht-re-inequalities-v1.0.0-candidate.zip",
     "archive_sha256_source": "outer release certificate",
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.21709238",
     "provider": "Zenodo",
     "record_url": "https://zenodo.org/records/21709239",
     "version_doi": "10.5281/zenodo.21709239"
@@ -94,6 +94,15 @@
     "A DOI or public release is not peer review."
   ],
   "publication_status": "anonymous unrefereed candidate computer-assisted manuscript",
+  "publication_readback": {
+    "byte_identical_release_assets": true,
+    "certificate_verified": true,
+    "github_immutable_release_verified": true,
+    "github_unauthenticated_clone_verified": true,
+    "readback_at": "2026-07-30T20:48:05Z",
+    "receipt": "PUBLICATION_READBACK.json",
+    "zenodo_unauthenticated_download_verified": true
+  },
   "repository": "ipitchford/exact-low-length-recht-re-inequalities",
   "schema": "recht-re.ai-evidence-index/v1",
   "version": "1.0.0-candidate"

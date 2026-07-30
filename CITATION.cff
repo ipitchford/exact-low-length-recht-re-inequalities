@@ -16,6 +16,9 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.21709239"
     description: DOI for the exact 1.0.0-candidate archival deposit
+  - type: doi
+    value: "10.5281/zenodo.21709238"
+    description: Concept DOI for all versions of this work
 repository-code: >-
   https://github.com/ipitchford/exact-low-length-recht-re-inequalities
 url: >-

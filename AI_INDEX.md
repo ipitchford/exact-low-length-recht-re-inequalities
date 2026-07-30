@@ -19,6 +19,8 @@ stated evidence.
 7. `tests/` -- required rejection controls.
 8. `provenance/SOURCE_PROVENANCE.md` and `reviews/` -- source lineage and
    internal audit record.
+9. `PUBLICATION_READBACK.json` -- authoritative public identifiers, immutable
+   Git objects, release-asset hashes, and unauthenticated cross-host readback.
 
 ## Claim classes
 

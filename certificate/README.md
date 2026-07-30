@@ -26,3 +26,9 @@ persistent GitHub and Zenodo publication context. It is not a digital
 signature, mathematical proof, external reproduction, or peer review. The
 detached SHA-256 sidecar detects accidental certificate changes but does not
 identify or authenticate a signer.
+
+The certificate was issued before Zenodo publication and therefore records a
+null concept DOI. This preserves identical certificate bytes on both public
+hosts. The authoritative concept DOI and public cross-host verification are
+recorded separately in `PUBLICATION_READBACK.json` on `main`; the immutable
+release tag and certificate are not rewritten.

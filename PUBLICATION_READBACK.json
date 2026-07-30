@@ -1,0 +1,111 @@
+{
+  "assets": [
+    {
+      "bytes": 585,
+      "github_url": "https://github.com/ipitchford/exact-low-length-recht-re-inequalities/releases/download/v1.0.0-candidate/SHA256SUMS.txt",
+      "name": "SHA256SUMS.txt",
+      "sha256": "2431ba0216796c40f1a9da0052ad68726bdee9c24161ed7904caf07e824e1f8a",
+      "zenodo_md5": "da069e0427f25a39d031cd2121b8153d",
+      "zenodo_url": "https://zenodo.org/api/records/21709239/files/SHA256SUMS.txt/content"
+    },
+    {
+      "bytes": 433901,
+      "github_url": "https://github.com/ipitchford/exact-low-length-recht-re-inequalities/releases/download/v1.0.0-candidate/exact-low-length-recht-re-inequalities-v1.0.0-candidate.pdf",
+      "name": "exact-low-length-recht-re-inequalities-v1.0.0-candidate.pdf",
+      "sha256": "d02949d1a6bd61244a07d0428bec8079a656e78fed17e9bd459ff7d9b120148b",
+      "zenodo_md5": "2f5d74e18f563fcb2a5878bcd2661c5e",
+      "zenodo_url": "https://zenodo.org/api/records/21709239/files/exact-low-length-recht-re-inequalities-v1.0.0-candidate.pdf/content"
+    },
+    {
+      "bytes": 2129414,
+      "github_url": "https://github.com/ipitchford/exact-low-length-recht-re-inequalities/releases/download/v1.0.0-candidate/exact-low-length-recht-re-inequalities-v1.0.0-candidate.zip",
+      "name": "exact-low-length-recht-re-inequalities-v1.0.0-candidate.zip",
+      "sha256": "09a4817cd89b10afea7d6b59b074605041bbb40986c70eb54d29e34481ba8a5b",
+      "zenodo_md5": "f25f23c8caf6e2dc791e49d5dae747b1",
+      "zenodo_url": "https://zenodo.org/api/records/21709239/files/exact-low-length-recht-re-inequalities-v1.0.0-candidate.zip/content"
+    },
+    {
+      "bytes": 5710,
+      "github_url": "https://github.com/ipitchford/exact-low-length-recht-re-inequalities/releases/download/v1.0.0-candidate/publication-certificate-v1.0.0-candidate.json",
+      "name": "publication-certificate-v1.0.0-candidate.json",
+      "sha256": "739ab30b0bb8358a177886b49955c7cf4d40cd65b0f4fad04ceb1d1b859cc79d",
+      "zenodo_md5": "e35425426878f57eea5faf6c9b79cc2b",
+      "zenodo_url": "https://zenodo.org/api/records/21709239/files/publication-certificate-v1.0.0-candidate.json/content"
+    },
+    {
+      "bytes": 112,
+      "github_url": "https://github.com/ipitchford/exact-low-length-recht-re-inequalities/releases/download/v1.0.0-candidate/publication-certificate-v1.0.0-candidate.json.sha256",
+      "name": "publication-certificate-v1.0.0-candidate.json.sha256",
+      "sha256": "4a6f6b39f610ff283a5620a5d72b7ea357777ffe06ed271828b98fea147297b4",
+      "zenodo_md5": "f16fbac04ee46c25eea2a89f0378485a",
+      "zenodo_url": "https://zenodo.org/api/records/21709239/files/publication-certificate-v1.0.0-candidate.json.sha256/content"
+    },
+    {
+      "bytes": 1098,
+      "github_url": "https://github.com/ipitchford/exact-low-length-recht-re-inequalities/releases/download/v1.0.0-candidate/release-replay-v1.0.0-candidate.txt",
+      "name": "release-replay-v1.0.0-candidate.txt",
+      "sha256": "661478fa4fcd1a1fd7495b1a747fde713589f35882f4902bd28841604d22c7e1",
+      "zenodo_md5": "73a1b96ff9a84503dd0886dbce783bfb",
+      "zenodo_url": "https://zenodo.org/api/records/21709239/files/release-replay-v1.0.0-candidate.txt/content"
+    }
+  ],
+  "assurance_boundary": [
+    "Public readback and matching hashes establish availability and byte identity, not mathematical correctness.",
+    "The outer certificate and GitHub attestation establish the stated provenance relationships, not formal verification.",
+    "Internal adversarial replay is not independent external reproduction, expert acceptance, or journal peer review."
+  ],
+  "certificate": {
+    "certificate_id": "urn:uuid:30242f7b-e18e-50b5-bedc-bb038657a530",
+    "certificate_sha256": "739ab30b0bb8358a177886b49955c7cf4d40cd65b0f4fad04ceb1d1b859cc79d",
+    "concept_doi_in_certificate": null,
+    "generated_at": "2026-07-30T20:22:47Z",
+    "sidecar_sha256": "4a6f6b39f610ff283a5620a5d72b7ea357777ffe06ed271828b98fea147297b4",
+    "strict_public_verification": true
+  },
+  "checks": {
+    "all_six_assets_downloaded_without_authentication": true,
+    "all_six_assets_match_across_local_github_and_zenodo": true,
+    "github_immutable_release_attestation_verified": true,
+    "github_public_clone_has_one_parentless_anonymous_commit": true,
+    "github_release_asset_attestations_verified": true,
+    "strict_certificate_verified_against_public_clone_and_fresh_zenodo_extraction": true,
+    "zenodo_public_api_metadata_verified": true
+  },
+  "github": {
+    "immutable": true,
+    "prerelease": true,
+    "published_at": "2026-07-30T20:43:50Z",
+    "release_id": 362700932,
+    "release_url": "https://github.com/ipitchford/exact-low-length-recht-re-inequalities/releases/tag/v1.0.0-candidate",
+    "repository_url": "https://github.com/ipitchford/exact-low-length-recht-re-inequalities",
+    "visibility": "public"
+  },
+  "readback_at": "2026-07-30T20:48:05Z",
+  "release": {
+    "commit": "e004658c83a71353983e67796d3dc07383e904ef",
+    "commit_parent_count": 0,
+    "commit_tree": "15bdc87f6581c30ee7ebc8d78e5e711952c44944",
+    "git_author": "Anonymous <anonymous@users.noreply.github.com>",
+    "git_committer": "Anonymous <anonymous@users.noreply.github.com>",
+    "tag": "v1.0.0-candidate",
+    "tag_object": "768d45469f4d0d4cbf9f2bf295a419084a7faf62",
+    "tagger": "Anonymous <anonymous@users.noreply.github.com>",
+    "version": "1.0.0-candidate"
+  },
+  "schema": "recht-re.publication-readback/v1",
+  "zenodo": {
+    "concept_doi": "10.5281/zenodo.21709238",
+    "concept_url": "https://doi.org/10.5281/zenodo.21709238",
+    "created": "2026-07-30T20:46:19.604522+00:00",
+    "creator": "Anonymous",
+    "language": "eng",
+    "license": "cc-zero",
+    "publication_date": "2026-07-30",
+    "record_id": 21709239,
+    "record_url": "https://zenodo.org/records/21709239",
+    "resource_type": "software",
+    "updated": "2026-07-30T20:46:19.996737+00:00",
+    "version_doi": "10.5281/zenodo.21709239",
+    "version_url": "https://doi.org/10.5281/zenodo.21709239"
+  }
+}

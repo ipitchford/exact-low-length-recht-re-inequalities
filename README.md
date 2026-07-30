@@ -18,14 +18,18 @@ quadratic optimization.
 ## Persistent identifiers
 
 - **Exact version DOI:** [10.5281/zenodo.21709239](https://doi.org/10.5281/zenodo.21709239)
+- **All-versions concept DOI:** [10.5281/zenodo.21709238](https://doi.org/10.5281/zenodo.21709238)
 - **GitHub repository:** [ipitchford/exact-low-length-recht-re-inequalities](https://github.com/ipitchford/exact-low-length-recht-re-inequalities)
 - **Candidate release:** [`v1.0.0-candidate`](https://github.com/ipitchford/exact-low-length-recht-re-inequalities/releases/tag/v1.0.0-candidate)
 - **Release certificate:** a separate hash-bound JSON asset accompanying the
   archive, paper, and replay transcript
+- **Public readback receipt:** [`PUBLICATION_READBACK.json`](PUBLICATION_READBACK.json)
 
-The concept DOI, final publication timestamp, release-asset hashes, and public
-readback receipt are added to `main` after Zenodo publication. They are not
-retroactively inserted into the immutable tag archive.
+GitHub published the immutable prerelease at `2026-07-30T20:43:50Z`; Zenodo
+registered the archival record at `2026-07-30T20:46:19.604522Z`. The receipt
+records the public identifiers, Git objects, asset hashes, and unauthenticated
+cross-host verification. None of this post-publication metadata was
+retroactively inserted into the immutable tag archive or certificate.
 
 ## Main results
 
